@@ -1,0 +1,231 @@
+.swiper {
+  position: relative;
+  width: 100%;
+
+  @media screen and (max-width: $max-tablet) {
+    overflow: visible;
+  }
+}
+
+.swiper-list-buttons {
+  position: relative;
+  width: calc(100% + 100px);
+  margin-left: -50px;
+
+  @media screen and (max-width: $max-tablet) {
+    width: calc(100% + 48px);
+    margin-left: -24px;
+  }
+
+  .swiper {
+    position: static;
+    width: calc(100% - 100px);
+    margin: 0 50px;
+
+    @media screen and (max-width: $max-tablet) {
+      width: calc(100% - 48px);
+      margin: 0 24px;
+    }
+  }
+
+  .swiper-btn {
+    @media screen and (max-width: $max-tablet) {
+      width: 30px;
+      min-width: 30px;
+      height: 30px;
+    }
+
+    svg {
+      @media (max-width: $max-tablet) {
+        width: 14px;
+        height: 10px;
+      }
+    }
+  }
+}
+
+.swiper-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 63px;
+  min-width: 63px;
+  height: 63px;
+
+  @media (max-width: $max-mobile) {
+    position: absolute;
+    left: 16px;
+    width: 18px;
+    min-width: 18px;
+    height: 18px;
+  }
+
+  svg {
+    display: block;
+    width: 18px;
+    height: 14px;
+  }
+}
+
+.swiper-btn-prev {
+  left: 10px;
+
+  @media (max-width: $max-mobile) {
+    left: -10px;
+  }
+}
+
+.swiper-btn-next {
+  right: 10px;
+  border-left: 1px solid transparent;
+
+  @media (max-width: $max-mobile) {
+    left: auto;
+    right: -10px;
+  }
+
+  svg {
+    transform: rotate(180deg);
+  }
+}
+
+.swiper-btn-light {
+  border: 1px solid $light-brown;
+
+  svg {
+    fill: $white;
+  }
+
+  @media (hover: hover), screen and (min-width: 0\0) {
+    &:hover,
+    &:active,
+    &:focus {
+      border-color: $white;
+      background-color: $white;
+
+      @media (max-width: $max-mobile) {
+        background-color: transparent;
+      }
+
+      svg {
+        fill: $black;
+
+        @media (max-width: $max-mobile) {
+          fill: $white;
+        }
+      }
+    }
+  }
+}
+
+.swiper-btn-dark {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  z-index: 30;
+  margin: auto;
+  box-shadow: 0 6px 15px 0 rgba(0, 0, 0, 0.1);
+  background-color: $white;
+
+  svg {
+    fill: $black;
+  }
+
+  @media (hover: hover), screen and (min-width: 0\0) {
+    &:hover,
+    &:focus {
+      svg {
+        fill: $brown;
+      }
+    }
+  }
+}
+
+.swiper-button-disabled {
+  display: none;
+}
+
+.swiper-pagination {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  width: fit-content;
+  margin: auto;
+
+  .swiper-pagination-bullet {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    min-width: 30px;
+    height: 30px;
+    border: 1px solid transparent;
+    border-radius: 50%;
+    background-color: transparent;
+    opacity: 1;
+
+    @media (max-width: $max-mobile) {
+      width: 20px;
+      min-width: 20px;
+      height: 20px;
+    }
+
+    &::before {
+      content: '';
+      display: block;
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background-color: $white;
+
+      @media (max-width: $max-mobile) {
+        width: 6px;
+        height: 6px;
+      }
+    }
+
+    &:hover,
+    &:active,
+    &:focus {
+      &::before {
+        background-color: $brown;
+      }
+    }
+  }
+
+  .swiper-pagination-bullet-active {
+    border-color: $light-brown;
+
+    &::before {
+      background-color: $brown;
+    }
+  }
+}
+
+.swiper-pagination-brown {
+  .swiper-pagination-bullet {
+    &::before {
+      background-color: $brown;
+    }
+
+    &:hover,
+    &:active,
+    &:focus {
+      &::before {
+        background-color: $brown;
+      }
+    }
+  }
+
+  .swiper-pagination-bullet-active {
+    border-color: $light-brown;
+
+    &::before {
+      background-color: $brown;
+    }
+  }
+}

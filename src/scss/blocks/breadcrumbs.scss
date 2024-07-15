@@ -1,0 +1,46 @@
+.breadcrumbs {
+  margin-bottom: 35px;
+  padding-top: 87px;
+
+  @media screen and (max-width: $max-tablet) {
+    padding-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  @media screen and (max-width: $max-mobile) {
+    margin-bottom: 15px;
+    padding-top: 10px;
+  }
+}
+
+.breadcrumbs-list {
+  display: flex;
+  align-items: center;
+}
+
+.breadcrumbs-item {
+  margin-right: 10px;
+
+  a {
+    color: $dark-grey;
+
+    @media (hover: hover), screen and (min-width: 0\0) {
+      &:hover,
+      &:active,
+      &:focus {
+        color: #888;
+      }
+    }
+  }
+
+  @media screen and (max-width: $max-mobile) {
+    margin-right: 5px;
+    font-size: 11px;
+    line-height: 140%;
+  }
+}
+
+.breadcrumbs-item-link.special-style {
+  display: block;
+  color: #888;
+}

@@ -1,0 +1,92 @@
+.blog-categories {
+  width: 300px;
+  min-width: 300px;
+  margin-bottom: 30px;
+  margin-left: 30px;
+  padding: 20px;
+  padding-bottom: 10px;
+  box-shadow: 7px 7px 16px 0 rgba(237, 237, 237, 0.45);
+
+  @media screen and (max-width: $max-tablet) {
+    order: 1;
+    width: 100%;
+    min-width: 100%;
+    margin-bottom: 30px;
+    margin-left: 0;
+  }
+
+  @media screen and (max-width: $max-mobile) {
+    padding: 20px 15px;
+  }
+}
+
+.blog-categories-header {
+  font-size: 22px;
+
+  @media screen and (max-width: $max-tablet) {
+    font-size: 20px;
+  }
+}
+
+.blog-categories-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+
+  @media screen and (max-width: $max-tablet) {
+    flex-direction: row;
+  }
+
+  @media screen and (max-width: $max-mobile) {
+    flex-wrap: wrap;
+  }
+}
+
+.blog-categories-item {
+  width: 100%;
+
+  @media screen and (max-width: $max-tablet) {
+    width: fit-content;
+  }
+
+  span {
+    color: $light-grey;
+  }
+
+  button {
+    @media (hover: hover), screen and (min-width: 0\0) {
+      &:hover,
+      &:active,
+      &:focus {
+        color: $brown;
+      }
+    }
+
+    @media screen and (max-width: $max-tablet) {
+      font-size: 15px;
+    }
+  }
+
+  @media screen and (max-width: $max-mobile) {
+    margin-right: 5px;
+    font-size: 12px;
+  }
+
+  @media screen and (max-width: $max-tablet) {
+    display: inline-block;
+    text-align: left;
+    vertical-align: middle;
+  }
+}
+
+.blog-categories-item-button.is-active {
+  color: $brown;
+
+  @media (hover: hover), screen and (min-width: 0\0) {
+    &:hover,
+    &:active,
+    &:focus {
+      text-decoration: underline;
+    }
+  }
+}

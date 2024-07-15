@@ -1,0 +1,27 @@
+.social {
+  display: flex;
+  gap: 20px;
+}
+
+.social-item-icon {
+  display: flex;
+  width: 20px;
+  height: 20px;
+
+  @media (hover: hover), screen and (min-width: 0\0) {
+    &:hover,
+    &:active,
+    &:focus {
+      svg {
+        fill: $brown;
+      }
+    }
+  }
+
+  svg {
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+    fill: $white;
+  }
+}

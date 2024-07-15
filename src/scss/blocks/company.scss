@@ -1,0 +1,86 @@
+.company-container {
+  display: flex;
+  align-items: center;
+}
+
+.company-texts {
+  margin-right: 90px;
+
+  @media screen and (max-width: $max-tablet) {
+    margin-right: 10px;
+  }
+
+  @media screen and (max-width: $max-mobile) {
+    margin-right: 0;
+  }
+}
+
+.company-text {
+  margin-bottom: 15px;
+  font-size: 15px;
+
+  @media screen and (max-width: $max-mobile) {
+    font-size: 13px
+  }
+
+  &:last-of-type {
+    margin-bottom: 45px;
+
+    @media screen and (max-width: $max-tablet) {
+      margin-bottom: 30px;
+    }
+  }
+}
+
+.company-images {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 600px;
+  min-width: 600px;
+  height: 420px;
+
+  &::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 3;
+    width: 418px;
+    height: 418px;
+    margin: auto;
+    background-image: url("../img/company-back.webp");
+    background-size: cover;
+
+    @media screen and (max-width: 1320px) {
+      width: 335px;
+      min-width: 335px;
+      height: 335px;
+    }
+  }
+
+  @media screen and (max-width: 1320px) {
+    width: 354px;
+    min-width: 354px;
+    height: 200px;
+  }
+
+  @media screen and (max-width: $max-mobile) {
+    display: none;
+  }
+}
+
+.company-image {
+  position: relative;
+  z-index: 5;
+  display: block;
+  width: 600px;
+  height: 338px;
+
+  @media screen and (max-width: 1320px) {
+    transform: scale(0.558);
+  }
+}

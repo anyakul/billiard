@@ -1,0 +1,11 @@
+{
+  "extends": "stylelint-config-sass-guidelines",
+
+  "rules": {
+    "declaration-no-important": true,
+    "max-nesting-depth": 4,
+    "selector-no-qualifying-type": null,
+    "selector-max-compound-selectors": null,
+    "property-no-vendor-prefix": null
+  }
+}

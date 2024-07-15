@@ -1,0 +1,112 @@
+.headers {
+  position: relative;
+  margin-bottom: 40px;
+  padding-bottom: 20px;
+  font-size: 45px;
+  line-height: 120%;
+  font-weight: 400;
+  font-family: $header-font;
+
+  &::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 60px;
+    min-width: 60px;
+    height: 2px;
+    background: linear-gradient(72deg, #E3AA56 0, #EAB56F 53%, #f7C791 100%);
+  }
+
+  @media screen and (max-width: $max-tablet) {
+    margin-bottom: 30px;
+    font-size: 30px;
+  }
+
+  @media screen and (max-width: $max-mobile) {
+    font-size: 25px;
+    line-height: 120%;
+  }
+
+  span {
+    font-weight: 500
+  }
+}
+
+.headers-center {
+  position: relative;
+  margin-bottom: 40px;
+  padding-bottom: 20px;
+  font-size: 45px;
+  line-height: 120%;
+  font-weight: 400;
+  text-align: center;
+  font-family: $header-font;
+
+  @media screen and (max-width: $max-tablet) {
+    margin-bottom: 30px;
+    font-size: 30px;
+  }
+
+  @media screen and (max-width: $max-mobile) {
+    font-size: 25px;
+    line-height: 120%;
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 184px;
+    min-width: 184px;
+    height: 12px;
+    margin: auto;
+    background-image: url("../img/headers-back.svg");
+
+    @media screen and (max-width: $max-tablet) {
+      width: 60px;
+      min-width: 60px;
+      height: 2px;
+      background: linear-gradient(72deg, #E3AA56 0, #EAB56F 53%, #f7C791 100%);
+    }
+  }
+}
+
+.small-header {
+  margin-bottom: 14px;
+  font-size: 12px;
+  line-height: 120%;
+  font-weight: 500;
+  font-family: $main-font;
+  text-transform: uppercase;
+
+  @media screen and (max-width: $max-tablet) {
+    margin-bottom: 8px;
+    font-size: 10px;
+  }
+}
+
+.headers-side {
+  margin-bottom: 15px;
+  font-size: 36px;
+  font-weight: 400;
+
+  @media screen and (max-width: $max-tablet) {
+    font-size: 22px;
+  }
+}
+
+.fw-500 {
+  font-weight: 500;
+}
+
+.fw-700 {
+  font-weight: 700;
+}
+
+.service-header {
+  br {
+    display: block;
+  }
+}

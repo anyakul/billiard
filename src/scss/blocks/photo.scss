@@ -1,0 +1,168 @@
+.photo-slider {
+  position: relative;
+  z-index: 20;
+  cursor: pointer;
+
+  @media screen and (max-width: $max-tablet) {
+    overflow-x: hidden;
+    padding-bottom: 15px;
+  }
+
+  a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 20;
+    width: 100%;
+    height: 100%;
+  }
+
+  @media (hover: hover), screen and (min-width: 0\0) {
+    &:hover,
+    &:active,
+    &:focus {
+      a {
+        display: block;
+      }
+    }
+  }
+}
+
+.photo {
+  @media (hover: hover), screen and (min-width: 0\0) {
+    &:hover,
+    &:active,
+    &:focus {
+      .photo-pagination {
+        display: flex;
+      }
+    }
+  }
+}
+
+.photo-list {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+  
+
+.photo-item {
+  display: none;
+  width: 100%;
+
+  img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+}
+
+.photo-item.active {
+  display: block;
+}
+
+.photo-link {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.photo-pagination {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 30;
+  display: none;
+  justify-content: center;
+  width: 100%;
+  height: calc(100% + 19px);
+  margin: 0 auto;
+
+  .photo-indicator {
+    position: relative;
+    opacity: 0.5;
+    display: block;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0 8px;
+    border-width: 0;
+    background-color: transparent;
+
+    @media screen and (max-width: $max-tablet) {
+      display: none;
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 8px;
+      left: 0;
+      right: 0;
+      display: block;
+      height: 5px;
+      width: calc(100% - 8px);
+      margin: auto;
+      background-color: $dark-grey;
+    }
+  }
+
+  .photo-indicator.active {
+    &::before {
+      background-color: $brown;
+    }
+  }
+}
+
+.photo {
+  position: relative;
+
+  a {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+  }
+
+  .photo-pagination {
+    @media screen and (max-width: $max-tablet) {
+      bottom: 0;
+      top: auto;
+      display: flex;
+      justify-content: center;
+      height: 6px;
+      padding: 0;
+    }
+
+    @media screen and (max-width: $max-mobile) {
+      bottom: 0;
+    }
+
+    .swiper-pagination-bullet {
+      width: 6px;
+      min-width: 6px;
+      height: 6px;
+      margin: 0;
+      margin-right: 3px;
+      background-color: $light-grey;
+      opacity: 1;
+    }
+
+    .swiper-pagination-bullet-active {
+      border-width: 0;
+      background-color: $brown;
+    }
+  }
+}
+
+.photo-list {
+  width: 100%;
+  height: 100%;
+  padding-bottom: 15px;
+}

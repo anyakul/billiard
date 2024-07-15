@@ -1,0 +1,40 @@
+.portfolio {
+  background-image: url("../img/portfolio-back.webp");
+}
+
+.portfolio-header {
+  margin-bottom: 40px;
+}
+
+.portfolio-list-buttons {
+  margin-bottom: 40px;
+
+  @media screen and (max-width: $max-tablet) {
+    margin-bottom: 30px;
+  }
+}
+
+.portfolio-list {
+  width: fit-content;
+}
+
+.portfolio-item {
+  width: 420px;
+  height: 430px;
+
+  @media screen and (max-width: $max-tablet) {
+    width: 281px;
+    height: 294px;
+  }
+}
+
+.portfolio-item-image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.portfolio-button {
+  margin: auto;
+}

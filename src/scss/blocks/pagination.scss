@@ -1,0 +1,58 @@
+.pagination-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 15px;
+
+  @media screen and (max-width: $max-mobile) {
+    margin-bottom: 40px;
+  }
+
+  button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 32px;
+    height: 32px;
+    margin-right: 8px;
+    border: 1px solid $light-grey;
+    font-size: 14px;
+    line-height: 100%;
+    background-color: $white;
+    opacity: 1;
+    cursor: pointer;
+  
+    @media (hover: hover), screen and (min-width: 0\0) {
+      &:hover,
+      &:active,
+      &:focus {
+        border: 1px solid $brown;
+        background-color: $brown;
+        color: $white;
+      }
+    }
+  }
+
+  button.active {
+    background-color: $brown;
+    color: $white;
+
+    @media (hover: hover), screen and (min-width: 0\0) {
+      &:hover,
+      &:active,
+      &:focus {
+        opacity: 0.8;
+      }
+    }
+  }
+}
+
+.pagination-per-page {
+  display: flex;
+  align-items: center;
+
+  .custom-select {
+    width: 70px;
+    margin-left: 15px;
+  }
+}

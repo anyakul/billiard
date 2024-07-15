@@ -1,0 +1,989 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preload" href="fonts/PlayfairDisplay-Regular.woff2" as="font" crossorigin>
+  <link rel="preload" href="fonts/GothamPro-Medium.woff2" as="font" crossorigin>
+  <link rel="preload" href="fonts/GothamPro.woff2" as="font" crossorigin>
+  <link rel="stylesheet" href="css/style.min.css">
+  <title>Бильярд вип</title>
+</head>
+
+<body>
+  <div class="wrapper">
+    <header class="header">
+      <div class="header-logo-contacts-account">
+        <div class="header-container container">
+          <button class="header-menu-button">
+            <svg width="10" height="10">
+              <use xlink:href="img/sprite.svg#icon-burger"></use>
+            </svg>
+          </button>
+          <div class="header-logo-contacts">
+            <a class="header-logo" href="index.html">
+              <img src="img/logo.png" width="187" height="43" alt="Логотип Бильярд вип">
+              <span class="header-logo-text">Дизайн-студия интерьеров
+                бильярдных и игровых комнат</span>
+            </a>
+            <a class="header-contacts-link" href="tel:88005002940">
+              8 (800) 500 29 40
+            </a>
+            <button class="header-button btn brown-color-btn" data-open-modal="call">Заказать звонок</button>
+          </div>
+          <div class="header-account">
+            <div class="header-account-pc">
+              <a class="header-account-link" href="#">Войти</a>
+              /
+              <a class="header-account-link" href="#">Регистрация</a>
+            </div>
+            <a class="header-icon-link" href="#">
+              <svg width="24" height="23">
+                <use xlink:href="img/sprite.svg#icon-edit"></use>
+              </svg>
+            </a>
+            <a class="header-icon-link" data-open-modal="cart" href="#">
+              <svg width="24" height="23">
+                <use xlink:href="img/sprite.svg#icon-cart"></use>
+              </svg>
+              <span class="header-cart-number">1</span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="header-menu-search section-black">
+        <div class="header-container container">
+          <ul class="header-menu-list">
+            <li class="header-menu-item header-menu-item-active">
+              <a class="header-menu-item-link" href="catalog.html">Каталог товаров</a>
+            </li>
+            <li class="header-menu-item">
+              <a class="header-menu-item-link" href="#">Проекты</a>
+            </li>
+            <li class="header-menu-item">
+              <a class="header-menu-item-link" href="#">Как купить</a>
+              <ul class="header-menu-list-1">
+                <li class="header-menu-item-1">
+                  <a class="header-menu-item-link-1" href="#">Условия оплаты</a>
+                </li>
+                <li class="header-menu-item-1">
+                  <a class="header-menu-item-link-1" href="#">Условия доставки</a>
+                </li>
+                <li class="header-menu-item-1">
+                  <a class="header-menu-item-link-1" href="#">Гарантия на товар</a>
+                </li>
+              </ul>
+            </li>
+            <li class="header-menu-item">
+              <a class="header-menu-item-link" href="blog.html">Новости</a>
+            </li>
+            <li class="header-menu-item">
+              <a class="header-menu-item-link" href="company.html">О компании</a>
+            </li>
+            <li class="header-menu-item">
+              <a class="header-menu-item-link" href="#">Сотрудничество</a>
+            </li>
+            <li class="header-menu-item">
+              <a class="header-menu-item-link" href="#">Контакты</a>
+            </li>
+          </ul>
+          <div class="header-contacts-tablet">
+            <a class="header-contacts-link" href="tel:88005002940">
+              8 (800) 500 29 40
+            </a>
+            <button class="header-button brown-color-button" data-open-modal="call">Заказать звонок</button>
+            <div class="header-account-pc">
+              <a class="header-account-link" href="#">Войти</a>
+              /
+              <a class="header-account-link" href="#">Регистрация</a>
+            </div>
+          </div>
+          <form role="search" class="header-search-form" action="#" method="get">
+            <button type="submit" class="header-search-button" value="Найти">
+              <svg width="18" height="18" xmlns="http://www.w3.org/2000/svg">
+                <use xlink:href="img/sprite.svg#icon-search"></use>
+              </svg>
+            </button>
+            <label for="search-index"></label>
+            <input class="header-search-input" type="text" name="searchIndex" id="search-index" placeholder="Поиск">
+          </form>
+        </div>
+      </div>
+    </header>
+    <main>
+      <h1 class="visually-hidden">Main page</h1>
+      <section class="intro swiper section-black">
+        <div class="intro-slider swiper-wrapper">
+          <div class="intro-slide intro-slide-full-image swiper-slide" style="background-image: url('img/photo-1.jpg');">
+            <div class="intro-container container">
+              <div class="intro-texts">
+                <h2 class="intro-header">Экслюзивный интерьер игровой комнаты</h2>
+                <p class="intro-text">Индивидуальный дизайн любой сложности</p>
+                <a class="intro-button btn white-color-btn" href="#" data-open-modal="call">Узнать подробнее</a>
+              </div>
+            </div>
+          </div>
+          <div class="intro-slide intro-slide-full-image swiper-slide" style="background-image: url('img/photo-1.jpg');">
+            <div class="intro-container container">
+              <div class="intro-texts">
+                <h2 class="intro-header">Экслюзивный интерьер игровой комнаты</h2>
+                <p class="intro-text">Индивидуальный дизайн любой сложности</p>
+                <a class="intro-button btn white-color-btn" href="#" data-open-modal="call">Узнать подробнее</a>
+              </div>
+            </div>
+          </div>
+          <div class="intro-slide intro-slide-full-image swiper-slide" style="background-image: url('img/photo-1.jpg');">
+            <div class="intro-container container">
+              <div class="intro-texts">
+                <h2 class="intro-header">Экслюзивный интерьер игровой комнаты</h2>
+                <p class="intro-text">Индивидуальный дизайн любой сложности</p>
+                <a class="intro-button btn white-color-btn" href="#" data-open-modal="call">Узнать подробнее</a>
+              </div>
+            </div>
+          </div>
+          <div class="intro-slide intro-slide-full-image swiper-slide" style="background-image: url('img/photo-1.jpg');">
+            <div class="intro-container container">
+              <div class="intro-texts">
+                <h2 class="intro-header">Экслюзивный интерьер игровой комнаты</h2>
+                <p class="intro-text">Индивидуальный дизайн любой сложности</p>
+                <a class="intro-button btn white-color-btn" href="#" data-open-modal="call">Узнать подробнее</a>
+              </div>
+            </div>
+          </div>
+          <div class="intro-slide swiper-slide" style="background-image: url('img/photo-1.jpg');">
+            <div class="intro-container container">
+              <div class="intro-texts">
+                <h2 class="intro-header">Экслюзивный интерьер игровой комнаты</h2>
+                <p class="intro-text">Индивидуальный дизайн любой сложности</p>
+                <a class="intro-button btn white-color-btn" href="#" data-open-modal="call">Узнать подробнее</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="intro-number-buttons container">
+          <div class="intro-buttons">
+            <button class="intro-prev swiper-btn swiper-btn-light swiper-btn-prev">
+              <svg width="18" height="14">
+                <use xlink:href="img/sprite.svg#icon-arrow"></use>
+              </svg>
+            </button>
+            <button class="intro-next swiper-btn swiper-btn-light swiper-btn-next">
+              <svg width="18" height="14">
+                <use xlink:href="img/sprite.svg#icon-arrow"></use>
+              </svg>
+            </button>
+          </div>
+          <div class="intro-number"></div>
+          <div class="swiper-pagination intro-pagination"></div>
+        </div>
+      </section>
+      <section class="categories">
+        <div class="categories-container container">
+          <div class="categories-ready">
+            <div class="categories-ready-images">
+              <div class="categories-ready-image">
+                <img src="img/photo-2.jpg" width="580" height="580" alt="Готовые решения">
+              </div>
+            </div>
+            <div class="categories-ready-texts">
+              <h2 class="categories-ready-header headers-center">Готовые решения</h2>
+              <p class="categories-ready-text">Наборы мебели и игрового инвентаря 
+                для бильярдной и игровой комнаты.</p>
+            </div>
+          </div>
+          <div class="categories-catalog">
+            <div class="categories-header-button">
+              <h2 class="categories-header headers">Категории каталога</h2>
+              <a class="categories-button btn black-color-btn" href="catalog.html">Весь каталог</a>
+            </div>
+            <div class="categories-swiper-buttons swiper-list-buttons">
+              <div class="categories-swiper swiper">
+                <ul class="categories-list swiper-wrapper">
+                  <li class="categories-item swiper-slide">
+                    <a href="catalog.html"></a>
+                    <div class="categories-item-image">
+                      <img src="img/categories-5.png" width="196" height="105" alt="Бильярдные столы">
+                    </div>
+                    <h3 class="categories-item-header">Бильярдные столы</h3>
+                  </li>
+                  <li class="categories-item swiper-slide">
+                    <a href="catalog.html"></a>
+                    <div class="categories-item-image">
+                      <img src="img/categories-1.png" width="180" height="123" alt="Бильярдные шары">
+                    </div>
+                    <h3 class="categories-item-header">Бильярдные шары</h3>
+                  </li>
+                  <li class="categories-item swiper-slide">
+                    <a href="catalog.html"></a>
+                    <div class="categories-item-image">
+                      <img src="img/categories-3.png" width="150" height="150" alt="Бильярдные кии">
+                    </div>
+                    <h3 class="categories-item-header">Бильярдные кии</h3>
+                  </li>
+                  <li class="categories-item swiper-slide">
+                    <a href="catalog.html"></a>
+                    <div class="categories-item-image">
+                      <img src="img/categories-6.png" width="123" height="132" alt="Треугольники">
+                    </div>
+                    <h3 class="categories-item-header">Треугольники</h3>
+                  </li>
+                  <li class="categories-item swiper-slide">
+                    <a href="catalog.html"></a>
+                    <div class="categories-item-image">
+                      <img src="img/categories-2.png" width="98" height="158" alt="Киевницы">
+                    </div>
+                    <h3 class="categories-item-header">Киевницы</h3>
+                  </li>
+                  <li class="categories-item swiper-slide">
+                    <a href="catalog.html"></a>
+                    <div class="categories-item-image">
+                      <img  src="img/categories-4.png" width="150" height="150" alt="Светильники">
+                    </div>
+                    <h3 class="categories-item-header">Светильники</h3>
+                  </li>
+                  <li class="categories-item swiper-slide">
+                    <a href="catalog.html"></a>
+                    <div class="categories-item-image">
+                      <img src="img/categories-2.png" width="98" height="158" alt="Киевницы">
+                    </div>
+                    <h3 class="categories-item-header">Киевницы</h3>
+                  </li>
+                  <li class="categories-item swiper-slide">
+                    <a href="catalog.html"></a>
+                    <div class="categories-item-image">
+                      <img  src="img/categories-4.png" width="150" height="150" alt="Светильники">
+                    </div>
+                    <h3 class="categories-item-header">Светильники</h3>
+                  </li>
+                </ul>
+                <div class="categories-buttons">
+                  <button class="categories-prev swiper-btn swiper-btn-dark swiper-btn-prev">
+                    <svg width="18" height="14">
+                      <use xlink:href="img/sprite.svg#icon-arrow"></use>
+                    </svg>
+                  </button>
+                  <button class="categories-next swiper-btn swiper-btn-dark swiper-btn-next">
+                    <svg width="18" height="14">
+                      <use xlink:href="img/sprite.svg#icon-arrow"></use>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="portfolio section" data-filter="slider-filter">
+        <div class="portfolio-container container">
+          <h2 class="portfolio-header headers-center">Проекты бильярдных и игровых</h2>
+          <div class="portfolio-tabs control swiper" data-filter="buttons">
+            <ul class="control-wrapper control-center swiper-wrapper">
+              <li class="control-item swiper-slide">
+                <button type="button" class="control-button control-button-active" data-category="all" data-filter="button">Все проекты</button>
+              </li>
+              <li class="control-item swiper-slide">
+                <button type="button" class="control-button" data-category="home" data-filter="button">Частные дома, дачи, коттеджи</button>
+              </li>
+              <li class="control-item swiper-slide">
+                <button type="button" class="control-button" data-category="club" data-filter="button">Бильярдные клубы</button>
+              </li>
+              <li class="control-item swiper-slide">
+                <button type="button" class="control-button" data-category="room" data-filter="button">Игровые комнаты</button>
+              </li>
+            </ul>
+          </div>
+          <div class="portfolio-list-buttons swiper-list-buttons">
+            <div class="portfolio-element swiper" data-filter="list">
+              <ul class="portfolio-list swiper-wrapper">
+                <li class="portfolio-item swiper-slide photo home" data-filter="item">
+                  <div class="photo-slider">
+                    <div class="photo-pagination"></div>
+                    <ul class="photo-list">
+                      <li class="photo-item">
+                        <img class="portfolio-item-image" src="img/photo-4.jpg" width="420" height="420" alt="Проекты бильярдных и игровых">
+                      </li>
+                      <li class="photo-item">
+                        <img class="portfolio-item-image" src="img/photo-5.jpg" width="420" height="420" alt="Проекты бильярдных и игровых">
+                      </li>
+                      <li class="photo-item">
+                        <img class="portfolio-item-image" src="img/photo-6.jpg" width="420" height="420" alt="Проекты бильярдных и игровых">
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="portfolio-item swiper-slide photo club" data-filter="item">
+                  <div class="photo-slider">
+                    <div class="photo-pagination"></div>
+                    <ul class="photo-list">
+                      <li class="photo-item">
+                        <img class="portfolio-item-image" src="img/photo-5.jpg" width="420" height="420" alt="Проекты бильярдных и игровых">
+                      </li>
+                      <li class="photo-item">
+                        <img class="portfolio-item-image" src="img/photo-4.jpg" width="420" height="420" alt="Проекты бильярдных и игровых">
+                      </li>
+                      <li class="photo-item">
+                        <img class="portfolio-item-image" src="img/photo-6.jpg" width="420" height="420" alt="Проекты бильярдных и игровых">
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="portfolio-item swiper-slide photo room" data-filter="item">
+                  <div class="photo-slider">
+                    <div class="photo-pagination"></div>
+                    <ul class="photo-list">
+                      <li class="photo-item">
+                        <img class="portfolio-item-image" src="img/photo-6.jpg" width="420" height="420" alt="Проекты бильярдных и игровых">
+                      </li>
+                      <li class="photo-item">
+                        <img class="portfolio-item-image" src="img/photo-4.jpg" width="420" height="420" alt="Проекты бильярдных и игровых">
+                      </li>
+                      <li class="photo-item">
+                        <img class="portfolio-item-image" src="img/photo-5.jpg" width="420" height="420" alt="Проекты бильярдных и игровых">
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="portfolio-item swiper-slide photo home" data-filter="item">
+                  <div class="photo-slider">
+                    <div class="photo-pagination"></div>
+                    <ul class="photo-list">
+                      <li class="photo-item">
+                        <img class="portfolio-item-image" src="img/photo-6.jpg" width="420" height="420" alt="Проекты бильярдных и игровых">
+                      </li>
+                      <li class="photo-item">
+                        <img class="portfolio-item-image" src="img/photo-4.jpg" width="420" height="420" alt="Проекты бильярдных и игровых">
+                      </li>
+                      <li class="photo-item">
+                        <img class="portfolio-item-image" src="img/photo-5.jpg" width="420" height="420" alt="Проекты бильярдных и игровых">
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="portfolio-item swiper-slide photo club" data-filter="item">
+                  <div class="photo-slider">
+                    <div class="photo-pagination"></div><ul class="photo-list">
+                      <li class="photo-item">
+                        <img class="portfolio-item-image" src="img/photo-4.jpg" width="420" height="420" alt="Проекты бильярдных и игровых">
+                      </li>
+                      <li class="photo-item">
+                        <img class="portfolio-item-image" src="img/photo-5.jpg" width="420" height="420" alt="Проекты бильярдных и игровых">
+                      </li>
+                      <li class="photo-item">
+                        <img class="portfolio-item-image" src="img/photo-6.jpg" width="420" height="420" alt="Проекты бильярдных и игровых">
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="portfolio-item swiper-slide photo home" data-filter="item">
+                  <div class="photo-slider">
+                    <div class="photo-pagination"></div>
+                    <ul class="photo-list">
+                      <li class="photo-item">
+                        <img class="portfolio-item-image" src="img/photo-5.jpg" width="420" height="420" alt="Проекты бильярдных и игровых">
+                      </li>
+                      <li class="photo-item">
+                        <img class="portfolio-item-image" src="img/photo-4.jpg" width="420" height="420" alt="Проекты бильярдных и игровых">
+                      </li>
+                      <li class="photo-item">
+                        <img class="portfolio-item-image" src="img/photo-6.jpg" width="420" height="420" alt="Проекты бильярдных и игровых">
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="portfolio-item swiper-slide photo home" data-filter="item">
+                  <div class="photo-slider">
+                    <div class="photo-pagination"></div><ul class="photo-list">
+                      <li class="photo-item">
+                        <img class="portfolio-item-image" src="img/photo-5.jpg" width="420" height="420" alt="Проекты бильярдных и игровых">
+                      </li>
+                      <li class="photo-item">
+                        <img class="portfolio-item-image" src="img/photo-4.jpg" width="420" height="420" alt="Проекты бильярдных и игровых">
+                      </li>
+                      <li class="photo-item">
+                        <img class="portfolio-item-image" src="img/photo-6.jpg" width="420" height="420" alt="Проекты бильярдных и игровых">
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+              <div class="portfolio-buttons">
+                <button class="portfolio-prev swiper-btn swiper-btn-dark swiper-btn-prev">
+                  <svg width="18" height="14">
+                    <use xlink:href="img/sprite.svg#icon-arrow"></use>
+                  </svg>
+                </button>
+                <button class="portfolio-next swiper-btn swiper-btn-dark swiper-btn-next">
+                  <svg width="18" height="14">
+                    <use xlink:href="img/sprite.svg#icon-arrow"></use>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+          <a class="portfolio-button btn black-button" href="#">Все проекты</a>
+        </div>
+      </section>
+      <section class="showroom section section-black">
+        <div class="showroom-container container">
+          <div class="showroom-texts">
+            <h2 class="showroom-header headers">Приглашаем
+              в шоурум</h2>
+            <p class="showroom-text">В нашем шоуруме вы можете посмотреть готовую мебель, посмотреть на материалы которые мы используем, пообщаться
+              с менеджером и дизайнером.</p>
+            <a class="showroom-button btn white-color-btn" href="#">Подробнее</a>
+          </div>
+          <div class="showroom-image">
+            <img src="img/photo-7.jpg" width="580" height="538" alt="Приглашаем в шоурум">
+          </div>
+        </div>
+      </section>
+      <section class="clients section">
+        <div class="clients-container container swiper">
+          <h2 class="clients-header headers-center">Наши клиенты</h2>
+          <ul class="clients-list swiper-wrapper">
+            <li class="clients-item swiper-slide">
+              <img class="clients-item-image" src="img/client-mts.png" width="138" height="34" alt="Клиент МТС">
+            </li>
+            <li class="clients-item swiper-slide">
+              <img class="clients-item-image" src="img/client-nornikel.png" width="119" height="68" alt="Клиент Норникель">
+            </li>
+            <li class="clients-item swiper-slide">
+              <img class="clients-item-image" src="img/client-rusgidro.png" width="145" height="47" alt="Клиент Русгидро">
+            </li>
+            <li class="clients-item swiper-slide">
+              <img class="clients-item-image" src="img/client-rzd.png" width="122" height="53" alt="Клиент РЖД">
+            </li>
+            <li class="clients-item swiper-slide">
+              <img class="clients-item-image" src="img/client-rostelecom.png" width="150" height="54" alt="Клиент Ростелеком">
+            </li>
+            <li class="clients-item swiper-slide">
+              <img class="clients-item-image" src="img/client-gazprombank.png" width="180" height="38" alt="Клиент Газпромбанк">
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="request section">
+        <ul class="request-images">
+          <li class="request-images-item">
+            <img class="request-image" src="img/photo-8.jpg" width="640" height="640" alt="Получить консультацию">
+          </li>
+          <li class="request-images-item">
+            <img class="request-image" src="img/photo-9.jpg" width="640" height="640" alt="Получить консультацию">
+          </li>
+          <li class="request-images-item">
+            <img class="request-image" src="img/photo-10.jpg" width="640" height="640" alt="Получить консультацию">
+          </li>
+        </ul>
+        <div class="request-container container">
+          <div class="request-texts">
+            <h2 class="request-header headers">Не знаете, что вам
+              подойдет?</h2>
+            <p class="request-text">Оставьте заявку и наши специлисты
+              помогут вам:</p>
+            <ul class="request-list">
+              <li class="request-item">
+                <span class="request-item-icon">
+                  <svg width="26" height="18">
+                    <use xlink:href="img/sprite.svg#icon-tick"></use>
+                  </svg>
+                </span>
+                <div class="request-item-texts">
+                  <p class="request-item-text">Создать дизайн-проект будущего изделия;</p>
+                </div>
+              </li>
+              <li class="request-item">
+                <span class="request-item-icon">
+                  <svg width="26" height="18">
+                    <use xlink:href="img/sprite.svg#icon-tick"></use>
+                  </svg>
+                </span>
+                <div class="request-item-texts">
+                  <p class="request-item-text">Подготовят смету в нескольких ценовых диапозонах;</p>
+                </div>
+              </li>
+              <li class="request-item">
+                <span class="request-item-icon">
+                  <svg width="26" height="18">
+                    <use xlink:href="img/sprite.svg#icon-tick"></use>
+                  </svg>
+                </span>
+                <div class="request-item-texts">
+                  <p class="request-item-text">Оформят доставку и сборку изделия.
+                  </p>
+                </div>
+              </li>
+            </ul>
+            <a class="request-button btn black-color-btn" href="#" data-open-modal="call">Получить консультацию</a>
+          </div>
+        </div>
+      </section>
+      <section class="facts section section-black">
+        <div class="facts-container container">
+          <div class="facts-icon-header">
+            <img class="facts-icon" src="img/icon-king.png" width="30" height="18" alt="О компании в цифрах">
+          </div>
+          <h2 class="facts-header headers-center">О компании в цифрах</h2>
+          <ul class="facts-list">
+            <li class="facts-item">
+              <div class="facts-item-number">
+                <p class="facts-item-value">2</p>
+                <p class="facts-item-number-text">Фабрики</p>
+              </div>
+              <p class="facts-item-text">Собственное производство</p>
+            </li>
+            <li class="facts-item">
+              <div class="facts-item-number">
+                <p class="facts-item-value">85</p>
+                <p class="facts-item-number-text">специалистов</p>
+              </div>
+              <p class="facts-item-text">Работающих по всей стране</p>
+            </li>
+            <li class="facts-item">
+              <div class="facts-item-number">
+                <p class="facts-item-value">19</p>
+                <p class="facts-item-number-text">лет работы</p>
+              </div>
+              <p class="facts-item-text">На рынке товаров бильярда</p>
+            </li>
+            <li class="facts-item">
+              <div class="facts-item-number">
+                <p class="facts-item-value">50+</p>
+                <p class="facts-item-number-text">проектов</p>
+              </div>
+              <p class="facts-item-text">Выполнили дизайн проектов</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="company section">
+        <div class="company-container container">
+          <div class="company-texts">
+            <h2 class="company-header small-header">О компании</h2>
+            <p class="company-header headers">Компания искусных
+              и талантливых мастеров </p>
+            <p class="company-text">Фабрика «Бильярд №1» — производитель бильярдных столов и крупнейший в России онлайн-гипермаркет бильярдных аксессуаров. Наша основная специализация – производство и продажа столов для разных типов игры: русской пирамиды, американского пула, снукера. Столы различаются между собой размерами, зарезкой луз, фактурой сукна и конструкцией бортов. От типа игры зависит также материал, толщина плиты и многие другие параметры бильярдного стола.</p>
+            <a class="company-button btn black-color-btn" href="company.html">Узнать больше</a>
+          </div>
+          <div class="company-images">
+            <img class="company-image" src="img/photo-3.png" width="600" height="338" alt="О компании">
+          </div>
+        </div>
+      </section>
+      <section class="contacts section">
+        <div class="contacts-map" id="map">
+          <img src="img/map.jpg" width="1918" height="600" alt="Карта">
+          <span class="contacts-tab" data-coord="[55.734030, 37.663530]" title="г. Москва, ул. Воронцовская 35Б корп. 2, 2 этаж"></span>
+        </div>
+        <div class="contacts-container container">
+          <div class="contacts-texts">
+            <h2 class="contacts-header headers">Как с нами связаться?</h2>
+            <a class="contacts-link contacts-link-phone" href="tel:88005002940">8 (800) 500-29-40</a>
+            <a class="contacts-link" href="mailto:hello@company.ru">hello@company.ru</a>
+            <a class="contacts-link" href="#">г. Москва, ул. Воронцовская 35Б корп. 2, 2 этаж</a>
+          </div>
+        </div>
+      </section>
+      <section class="partners section section-black">
+        <div class="partners-container container swiper">
+          <h2 class="visually-hidden">Партнеры</h2>
+          <ul class="partners-list swiper-wrapper">
+            <li class="partners-item swiper-slide">
+              <img class="partners-item-image" src="img/logo-weekend.png" width="141" height="23" alt="Партнеры">
+            </li>
+            <li class="partners-item swiper-slide">
+              <img class="partners-item-image" src="img/logo-araminh.png" width="128" height="31" alt="Партнеры">
+            </li>
+            <li class="partners-item swiper-slide">
+              <img class="partners-item-image" src="img/logo-start.png" width="132" height="60" alt="Партнеры">
+            </li>
+            <li class="partners-item swiper-slide">
+              <img class="partners-item-image" src="img/logo-weekend.png" width="141" height="23" alt="Партнеры">
+            </li>
+            <li class="partners-item swiper-slide">
+              <img class="partners-item-image" src="img/logo-araminh.png" width="128" height="31" alt="Партнеры">
+            </li>
+            <li class="partners-item swiper-slide">
+              <img class="partners-item-image" src="img/logo-start.png" width="132" height="60" alt="Партнеры">
+            </li>
+          </ul>
+          <div class="partners-buttons">
+            <button class="partners-prev swiper-btn swiper-btn-light swiper-btn-prev">
+              <svg width="18" height="14">
+                <use xlink:href="img/sprite.svg#icon-arrow"></use>
+              </svg>
+            </button>
+            <button class="partners-next swiper-btn swiper-btn-light swiper-btn-next">
+              <svg width="18" height="14">
+                <use xlink:href="img/sprite.svg#icon-arrow"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </section>
+      <div class="btn-up btn-up-hide btn-up_hide"></div>
+    </main>
+    <footer class="footer section-black">
+      <div class="footer-section">
+        <div class="footer-container container">
+          <div class="footer-part" data-hide="item">
+            <button class="footer-part-button" data-hide="button">Компания</button>
+            <ul class="footer-list" data-hide="mobile-hidden">
+              <li class="footer-item">
+                <a href="company.html">О компании</a>
+              </li>
+              <li class="footer-item">
+                <a href="#">Проекты</a>
+              </li>
+              <li class="footer-item">
+                <a href="#">Партнеры</a>
+              </li>
+              <li class="footer-item">
+                <a href="blog.html">Новости</a>
+              </li>
+              <li class="footer-item">
+                <a href="#">Команда</a>
+              </li>
+              <li class="footer-item">
+                <a href="#">Контакты</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-part" data-hide="item">
+            <button class="footer-part-button" data-hide="button">Информация</button>
+            <ul class="footer-list" data-hide="mobile-hidden">
+              <li class="footer-item">
+                <a href="#">Способы оплаты</a>
+              </li>
+              <li class="footer-item">
+                <a href="#">Условия доставки</a>
+              </li>
+              <li class="footer-item">
+                <a href="#">Гарантия на товар</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-part" data-hide="item">
+            <button class="footer-part-button" data-hide="button">Сотрудничество</button>
+            <ul class="footer-list" data-hide="mobile-hidden">
+              <li class="footer-item">
+                <a href="#">Дизайнерам</a>
+              </li>
+              <li class="footer-item">
+                <a href="#">Поставщикам</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-part footer-part-payment" data-hide="item">
+            <button class="footer-part-button" data-hide="button">Способы оплаты</button>
+            <div class="footer-hidden" data-hide="mobile-hidden">
+              <p class="footer-part-text">Вы можете оплатить покупки онлайн, наличными в наших салонах, а также по выставленному счёту</p>
+              <ul class="footer-logo-list">
+                <li class="footer-logo-item">
+                  <a href="#"></a>
+                  <img class="footer-logo" src="img/logo-visa.png" width="35" height="11" alt="Виза">
+                </li>
+                <li class="footer-logo-item">
+                  <a href="#"></a>
+                  <img class="footer-logo" src="img/logo-mastercard.png" width="33" height="20" alt="Мастеркард">
+                </li>
+                <li class="footer-logo-item">
+                  <a href="#"></a>
+                  <img class="footer-logo" src="img/logo-mir.png" width="38" height="10" alt="Мир">
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer-part footer-part-contacts" data-hide="item">
+            <button class="footer-part-button" data-hide="button">Контакты</button>
+            <div class="footer-hidden" data-hide="mobile-hidden">
+              <a class="footer-contacts-link" href="tel:88005002940" data-hide="hidden">8 (800) 500-29-40</a>
+              <button class="footer-button brown-color-button" data-open-modal="call">Заказать звонок</button>
+              <ul class="footer-social social">
+                <li class="social-item">
+                  <a class="social-link" href="#">
+                    <span class="social-item-icon">
+                      <svg width="20" height="20">
+                        <use xlink:href="img/sprite.svg#icon-facebook"></use>
+                      </svg>
+                    </span>
+                  </a>
+                </li>
+                <li class="social-item">
+                  <a class="social-link" href="#">
+                    <span class="social-item-icon">
+                      <svg width="18" height="18">
+                        <use xlink:href="img/sprite.svg#icon-whatsapp"></use>
+                      </svg>
+                    </span>
+                  </a>
+                </li>
+                <li class="social-item">
+                  <a class="social-link" href="#">
+                    <span class="social-item-icon">
+                      <svg width="18" height="18">
+                        <use xlink:href="img/sprite.svg#icon-telegram"></use>
+                      </svg>
+                    </span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-section">
+        <div class="footer-copyright container">
+          <a class="footer-main-logo" href="index.html">
+            <img src="img/logo.png" width="187" height="43" alt="Логотип Бильярд вип">
+          </a>
+          <p class="footer-copyright-text">2020 © Группа компаний Бильярд №1</p>
+          <a class="footer-copyright-link" href="#">Политика конфиденциальности</a>
+          <a class="footer-copyright-link" href="#">Публичная  оферта</a>
+        </div>
+      </div>
+    </footer>
+    <section class="modal modal--preload" data-modal="call">
+      <div class="modal-wrapper">
+        <div class="modal-overlay" data-close-modal="data-close-modal">
+        </div>
+        <div class="modal-content modal-content-contacts">
+          <div class="contacts-texts">
+            <div class="contacts-header-text">
+              <h2 class="contacts-header small-header">Заказать звонок</h2>
+            </div>
+            <form class="contacts-form contact-form form" action="#" method="post">
+              <ul class="contact-form-list">
+                <li class="contact-form-item">
+                  <label for="modal-name">Ваше имя*</label>
+                  <input type="text" id="modal-name" name="name" required>
+                </li>
+                <li class="contact-form-item">
+                  <label for="modal-phone">Ваш телефон*</label>
+                  <input type="tel" placeholder="+7 (___)___-__-__" maxlength="18" id="modal-phone" name="phone" pattern="^((\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{10,15}$" required>
+                </li>
+                <li class="contact-form-item">
+                  <label for="modal-email">Электронная почта</label>
+                  <input type="email" placeholder="Email" id="modal-email" name="email"
+                    pattern="[a-z0-9]+@[a-z0-9]+\.[a-z]{2,3}" required>
+                </li>
+                <li class="contact-form-item">
+                  <label for="modal-message">Ваше сообщение</label>
+                  <textarea id="modal-message" name="message" placeholder="Ваше сообщение"></textarea>
+                </li>
+                <li class="contact-form-item">
+                  <input type="radio" class="visually-hidden" id="modal-agree" name="modal-agree" value="yes">
+                  <label for="modal-agree">Я согласен на <a href="#">обработку персональных данных</a></label>
+                </li>
+              </ul>
+              <button class="contact-form-button btn black-button" type="submit">Отправить</button>
+            </form>
+          </div>
+          <button class="modal-close-btn" type="button" aria-label="Закрыть попап" data-close-modal="data-close-modal" data-focus="data-focus">
+            <svg width="15" height="15">
+              <use xlink:href="img/sprite.svg#icon-cross"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </section>
+    <section class="modal modal--preload" data-modal="cart">
+      <div class="modal-wrapper">
+        <div class="modal-overlay" data-close-modal="data-close-modal">
+        </div>
+        <div class="modal-content modal-content-cart">
+          <div class="cart">
+            <div class="cart-container">
+              <h2 class="cart-header">Состав по предметам</h2>
+              <div class="cart-table">
+                <div class="cart-table-names">
+                  <div class="cart-table-part cart-table-part-image">
+                    <p class="cart-table-part-name">Фото</p>
+                  </div>
+                  <div class="cart-table-part cart-table-part-names">
+                    <p class="cart-table-part-name">Наименование</p>
+                  </div>
+                  <div class="cart-table-part cart-table-part-article">
+                    <p class="cart-table-part-name">Артикул</p>
+                  </div>
+                  <div class="cart-table-part cart-table-part-size">
+                    <p class="cart-table-part-name">Размер</p>
+                  </div>
+                  <div class="cart-table-part cart-table-part-price">
+                    <p class="cart-table-part-name">Цена</p>
+                  </div>
+                  <div class="cart-table-part cart-table-part-number">
+                    <p class="cart-table-part-name">Количество</p>
+                  </div>
+                  <div class="cart-table-part cart-table-part-sum">
+                    <p class="cart-table-part-name">Сумма</p>
+                  </div>
+                  <div class="cart-table-part cart-table-part-check">
+                    <p class="cart-table-part-name">Выбрано</p>
+                  </div>
+                  <div class="cart-table-part cart-table-part-remove">
+                    <p class="cart-table-part-name"></p>
+                  </div>
+                </div>
+                <p class="cart-no-items">В корзине ничего нет. Добавьте товары в корзину</p>
+                <div class="cart-lists">
+                  <!--<div class="cart-list">
+                    <div class="cart-table-part cart-table-part-image">
+                      <div class="cart-image">
+                        <img src="img/catalog-1.jpg" width="130" height="130" alt="Кресло JAGGER">
+                      </div>
+                    </div>
+                    <div class="cart-table-part cart-table-part-names">
+                      <p class="cart-table-item-name">Наименование</p>
+                      <p class="cart-table-item-text">Кресло JAGGER</p>
+                    </div>
+                    <div class="cart-table-part cart-table-part-article">
+                      <p class="cart-table-item-name">Артикул</p>
+                      <p class="cart-table-item-text">IC-83168</p>
+                    </div>
+                    <div class="cart-table-part cart-table-part-size">
+                      <p class="cart-table-item-name">Размер</p>
+                      <p class="cart-table-item-text">83х78х97</p>
+                    </div>
+                    <div class="cart-table-part cart-table-part-price">
+                      <p class="cart-table-item-name">Цена</p>
+                      <p class="cart-table-item-text">1 392 869 Р</p>
+                    </div>
+                    <div class="cart-table-part cart-table-part-number">
+                      <div class="cart-buttons-number">
+                        <button class="cart-button-number cart-button-number-less">
+                          <svg width="14" height="7">
+                            <use xlink:href="img/sprite.svg#icon-arrow"></use>
+                          </svg>
+                        </button>
+                        <p class="cart-number">1</p>
+                        <button class="cart-button-number cart-button-number-more">
+                          <svg width="14" height="7">
+                            <use xlink:href="img/sprite.svg#icon-arrow"></use>
+                          </svg>
+                        </button>
+                      </div>
+                    </div>
+                    <div class="cart-table-part cart-table-part-sum">
+                      <p class="cart-table-item-name">Сумма</p>
+                      <p class="cart-table-item-text">1 392 869 Р</p>
+                    </div>
+                    <div class="cart-table-part cart-table-part-check">
+                      <div class="cart-table-choose cart-table-choose-true">
+                        <svg width="14" height="10">
+                          <use xlink:href="img/sprite.svg#icon-tick"></use>
+                        </svg>
+                      </div>
+                    </div>
+                    <div class="cart-table-part cart-table-part-remove">
+                      <button class="cart-item-delete-button">
+                        ✖
+                      </button>
+                    </div>
+                  </div>
+                  <div class="cart-list">
+                    <div class="cart-table-part cart-table-part-image">
+                      <div class="cart-image">
+                        <img src="img/catalog-1.jpg" width="130" height="130" alt="Кресло JAGGER">
+                      </div>
+                    </div>
+                    <div class="cart-table-part cart-table-part-names">
+                      <p class="cart-table-item-name">Наименование</p>
+                      <p class="cart-table-item-text">Кресло JAGGER</p>
+                    </div>
+                    <div class="cart-table-part cart-table-part-size">
+                      <p class="cart-table-item-name">Размер</p>
+                      <p class="cart-table-item-text">IC-83168</p>
+                    </div>
+                    <div class="cart-table-part cart-table-part-article">
+                      <p class="cart-table-item-name">Артикул</p>
+                      <p class="cart-table-item-text">83х78х97</p>
+                    </div>
+                    <div class="cart-table-part cart-table-part-price">
+                      <p class="cart-table-item-name">Цена</p>
+                      <p class="cart-table-item-text">1 392 869 Р</p>
+                    </div>
+                    <div class="cart-table-part cart-table-part-number">
+                      <div class="cart-buttons-number">
+                        <button class="cart-button-number cart-button-number-less">
+                          <svg width="14" height="7">
+                            <use xlink:href="img/sprite.svg#icon-arrow"></use>
+                          </svg>
+                        </button>
+                        <p class="cart-number">1</p>
+                        <button class="cart-button-number cart-button-number-more">
+                          <svg width="14" height="7">
+                            <use xlink:href="img/sprite.svg#icon-arrow"></use>
+                          </svg>
+                        </button>
+                      </div>
+                    </div>
+                    <div class="cart-table-part cart-table-part-sum">
+                      <p class="cart-table-item-name">Сумма</p>
+                      <p class="cart-table-item-text">1 392 869 Р</p>
+                    </div>
+                    <div class="cart-table-part cart-table-part-check">
+                      <div class="cart-table-choose cart-table-choose-true">
+                        <svg width="14" height="10">
+                          <use xlink:href="img/sprite.svg#icon-tick"></use>
+                        </svg>
+                      </div>
+                    </div>
+                    <div class="cart-table-part cart-table-part-remove">
+                      <button class="cart-item-delete-button">
+                        ✖
+                      </button>
+                    </div>
+                    <p class="cart-max-number visually-hidden">5</p>
+                  </div>-->
+                </div>
+              </div>
+              <div class="cart-all">
+                Общая сумма: <span class="cart-total">1 392 869</span> Р
+              </div>
+              <form class="cart-form contact-form form" action="#" method="post" target="_blank">
+                <div class="cart-form-list-button">
+                  <ul class="cart-form-list">
+                    <li class="cart-form-item">
+                      <label for="cart-name" class="visually-hidden">Как к вам обращаться?</label>
+                      <input type="text" id="cart-name" name="name" placeholder="Как к вам обращаться?" required>
+                    </li>
+                    <li class="cart-form-item">
+                      <label for="cart-phone" class="visually-hidden">Ваш телефон</label>
+                      <input type="tel" placeholder="+7 (___)___-__-__" maxlength="18" id="cart-phone" name="phone" pattern="^((\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{10,15}$" required>
+                    </li>
+                    <li class="cart-form-item">
+                      <label class="visually-hidden" for="cart-email">Электронная почта</label>
+                      <input type="email" placeholder="Email" id="cart-email" name="email"
+                        pattern="[a-z0-9]+@[a-z0-9]+\.[a-z]{2,3}" required>
+                    </li>
+                    <li class="cart-form-item-info">
+                      <label for="cart-name" class="visually-hidden">Товары</label>
+                      <input type="hidden" id="cart-info" name="name">
+                    </li>
+                  </ul>
+                  <button class="cart-button btn black-button" type="submit">Оформить заказ</button>
+                </div>
+                <div class="contact-form-radio">
+                  <input class="visually-hidden" type="radio" id="cart-agree" name="cart-agree" value="Согласен" required oninvalid="document.querySelector('.cart-agree-error-message').innerHTML = 'Поставьте отметку о согласии с Политикой конфиденциальности'">
+                  <label for="cart-agree">Я согласен с условиями <a href="#">Политики конфиденциальности</a></label>
+                  <span class="cart-agree-error-message"></span>
+                </div>
+              </form>
+            </div>
+            <button class="modal-close-btn" type="button" aria-label="Закрыть попап" data-close-modal="data-close-modal" data-focus="data-focus">
+              <svg width="15" height="15">
+                <use xlink:href="img/sprite.svg#icon-cross"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;"></script>
+  <script src="./js/swiper.min.js"></script>
+  <script src="./js/main.min.js"></script>
+</body>
+
+</html>

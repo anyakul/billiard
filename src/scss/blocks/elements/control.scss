@@ -1,0 +1,64 @@
+.control {
+  margin-bottom: 40px;
+
+  @media screen and (max-width: $max-tablet) {
+    margin-bottom: 20px;
+  }
+}
+
+.control-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  @media screen and (max-width: $max-mobile) {
+    gap: 0;
+  }
+}
+
+.control-center {
+  justify-content: center;
+
+  @media screen and (max-width: $max-mobile) {
+    justify-content: flex-start;
+  }
+}
+
+.control-item {
+  width: auto;
+}
+
+.control-button {
+  height: 35px;
+  padding: 12px 14px;
+  border: 1px solid transparent;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.1px;
+  white-space: nowrap;
+
+  @media (hover: hover), screen and (min-width: 0\0) {
+    &:hover,
+    &:active,
+    &:focus {
+      color: $brown
+    }
+  }
+
+  @media screen and (max-width: $max-tablet) {
+    font-size: 10px;
+  }
+}
+
+.control-button-active {
+  border-color: #D0B48C;
+
+  @media (hover: hover), screen and (min-width: 0\0) {
+    &:hover,
+    &:active,
+    &:focus {
+      color: $brown;
+    }
+  }
+}

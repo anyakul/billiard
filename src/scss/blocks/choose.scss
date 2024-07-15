@@ -1,0 +1,129 @@
+.choose {
+  @media screen and (max-width: $max-mobile) {
+    margin-bottom: 50px;
+    padding-bottom: 10px;
+  }
+}
+
+.choose-container {
+  position: relative;
+  z-index: 10;
+  display: flex;
+  overflow: visible;
+
+  @media screen and (max-width: $max-tablet) {
+    flex-direction: column;
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    left: -236px;
+    width: 963px;
+    height: 100%;
+    background-image: url("../img/choose-back.webp");
+    background-size: 963px 579px;
+    background-repeat: no-repeat;
+    background-position: left top;
+  }
+}
+
+.choose-texts {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: calc(100% - 665px);
+  min-width: calc(100% - 665px);
+  padding: 60px 0;
+  padding-right: 30px;
+
+  @media screen and (max-width: $max-tablet) {
+    width: 100%;
+    min-width: 100%;
+    padding: 30px 0;
+    padding-right: 0;
+  }
+}
+
+.choose-icon {
+  display: block;
+  width: 64px;
+  min-width: 64px;
+  height: 55px;
+  margin: auto;
+  margin-bottom: 15px;
+}
+
+.choose-text {
+  margin-bottom: 15px;
+  font-size: 15px;
+
+  &:last-of-type {
+    margin-bottom: 35px;
+  }
+}
+
+.choose-button {
+  margin: 0 auto;
+}
+
+.choose-list {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-wrap: wrap;
+  width: 957px;
+  min-width: 957px;
+  margin-right: -100px;
+
+  @media screen and (max-width: $max-tablet) {
+    width: 100%;
+    min-width: 100%;
+    margin-right: 0;
+  }
+
+  @media screen and (max-width: $max-mobile) {
+    flex-wrap: nowrap;
+    width: fit-content;
+    min-width: fit-content;
+  }
+}
+
+.choose-pagination {
+  margin-bottom: -45px;
+}
+
+.choose-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 319px;
+  height: 290px;
+
+  @media screen and (max-width: $max-tablet) {
+    width: calc(33% + 2px);
+    height: 215px;
+  }
+
+  @media screen and (max-width: $max-mobile) {
+    width: 290px;
+    height: 290px;
+  }
+}
+
+.choose-item-white {
+  background-color: $white;
+}
+
+.choose-item-image {
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+
+  @media screen and (max-width: $max-tablet) {
+    transform: scale(0.739);
+  }
+}

@@ -1,0 +1,1282 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preload" href="fonts/PlayfairDisplay-Regular.woff2" as="font" crossorigin>
+  <link rel="preload" href="fonts/GothamPro-Medium.woff2" as="font" crossorigin>
+  <link rel="preload" href="fonts/GothamPro.woff2" as="font" crossorigin>
+  <link rel="stylesheet" href="css/style.min.css">
+  <title>Бильярд вип</title>
+</head>
+
+<body>
+  <div class="wrapper">
+    <header class="header">
+      <div class="header-logo-contacts-account">
+        <div class="header-container container">
+          <button class="header-menu-button">
+            <svg width="10" height="10">
+              <use xlink:href="img/sprite.svg#icon-burger"></use>
+            </svg>
+          </button>
+          <div class="header-logo-contacts">
+            <a class="header-logo" href="index.html">
+              <img src="img/logo.png" width="187" height="43" alt="Логотип Бильярд вип">
+              <span class="header-logo-text">Дизайн-студия интерьеров
+                бильярдных и игровых комнат</span>
+            </a>
+            <a class="header-contacts-link" href="tel:88005002940">
+              8 (800) 500 29 40
+            </a>
+            <button class="header-button btn brown-color-btn" data-open-modal="call">Заказать звонок</button>
+          </div>
+          <div class="header-account">
+            <div class="header-account-pc">
+              <a class="header-account-link" href="#">Войти</a>
+              /
+              <a class="header-account-link" href="#">Регистрация</a>
+            </div>
+            <a class="header-icon-link" href="#">
+              <svg width="24" height="23">
+                <use xlink:href="img/sprite.svg#icon-edit"></use>
+              </svg>
+            </a>
+            <a class="header-icon-link" data-open-modal="cart" href="#">
+              <svg width="24" height="23">
+                <use xlink:href="img/sprite.svg#icon-cart"></use>
+              </svg>
+              <span class="header-cart-number">1</span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="header-menu-search section-black">
+        <div class="header-container container">
+          <ul class="header-menu-list">
+            <li class="header-menu-item header-menu-item-active">
+              <a class="header-menu-item-link" href="catalog.html">Каталог товаров</a>
+            </li>
+            <li class="header-menu-item">
+              <a class="header-menu-item-link" href="#">Проекты</a>
+            </li>
+            <li class="header-menu-item">
+              <a class="header-menu-item-link" href="#">Как купить</a>
+              <ul class="header-menu-list-1">
+                <li class="header-menu-item-1">
+                  <a class="header-menu-item-link-1" href="#">Условия оплаты</a>
+                </li>
+                <li class="header-menu-item-1">
+                  <a class="header-menu-item-link-1" href="#">Условия доставки</a>
+                </li>
+                <li class="header-menu-item-1">
+                  <a class="header-menu-item-link-1" href="#">Гарантия на товар</a>
+                </li>
+              </ul>
+            </li>
+            <li class="header-menu-item">
+              <a class="header-menu-item-link" href="blog.html">Новости</a>
+            </li>
+            <li class="header-menu-item">
+              <a class="header-menu-item-link" href="company.html">О компании</a>
+            </li>
+            <li class="header-menu-item">
+              <a class="header-menu-item-link" href="#">Сотрудничество</a>
+            </li>
+            <li class="header-menu-item">
+              <a class="header-menu-item-link" href="#">Контакты</a>
+            </li>
+          </ul>
+          <div class="header-contacts-tablet">
+            <a class="header-contacts-link" href="tel:88005002940">
+              8 (800) 500 29 40
+            </a>
+            <button class="header-button brown-color-button" data-open-modal="call">Заказать звонок</button>
+            <div class="header-account-pc">
+              <a class="header-account-link" href="#">Войти</a>
+              /
+              <a class="header-account-link" href="#">Регистрация</a>
+            </div>
+          </div>
+          <form role="search" class="header-search-form" action="#" method="get">
+            <button type="submit" class="header-search-button" value="Найти">
+              <svg width="18" height="18" xmlns="http://www.w3.org/2000/svg">
+                <use xlink:href="img/sprite.svg#icon-search"></use>
+              </svg>
+            </button>
+            <label for="search-index"></label>
+            <input class="header-search-input" type="text" name="searchIndex" id="search-index" placeholder="Поиск">
+          </form>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="breadcrumbs">
+        <ul class="breadcrumbs-list container">
+          <li class="breadcrumbs-item">
+            <a class="breadcrumbs-item-link" href="index.html">Главная</a>
+          </li>
+          <li class="breadcrumbs-item">
+            /
+          </li>
+          <li class="breadcrumbs-item">
+            <a class="breadcrumbs-item-link" href="catalog.html">Каталог</a>
+          </li>
+          <li class="breadcrumbs-item">
+            /
+          </li>
+          <li class="breadcrumbs-item">
+            <a class="breadcrumbs-item-link special-style" href="product.html">Мягкое кресло SKY ONE фабрики CIRCU</a>
+          </li>
+        </ul>
+      </div>
+      <section class="product section-side" data-cart="product">
+        <div class="product-container container">
+          <div class="product-header-info">
+            <h1 class="product-header headers-side" data-cart="header">Мягкое кресло SKY ONE фабрики CIRCU</h1>
+          </div>
+          <div class="product-parent">
+            <div class="product-images-element">
+              <div class="product-small-images">
+                <button class="product-prev swiper-button">
+                  <svg width="30" height="30">
+                    <use xlink:href="img/sprite.svg#icon-arrow"></use>
+                  </svg>
+                </button>
+                <div class="product-small-images-swiper swiper">
+                  <ul class="product-images-list swiper-wrapper">
+                    <li class="product-images-item swiper-slide">
+                      <img src="img/catalog-1.jpg" data-cart="image" width="70" height="70" alt="Мягкое кресло SKY ONE фабрики CIRCU">
+                    </li>
+                    <li class="product-images-item swiper-slide">
+                      <img src="img/catalog-2.jpg" width="70" height="70" alt="Мягкое кресло SKY ONE фабрики CIRCU">
+                    </li>
+                    <li class="product-images-item swiper-slide">
+                      <img src="img/catalog-3.jpg" width="70" height="70" alt="Мягкое кресло SKY ONE фабрики CIRCU">
+                    </li>
+                    <li class="product-images-item swiper-slide">
+                      <img src="img/catalog-4.jpg" width="70" height="70" alt="Мягкое кресло SKY ONE фабрики CIRCU">
+                    </li>
+                    <li class="product-images-item swiper-slide">
+                      <img src="img/catalog-4.jpg" width="70" height="70" alt="Мягкое кресло SKY ONE фабрики CIRCU">
+                    </li>
+                  </ul>
+                </div>
+                <button class="product-next swiper-button">
+                  <svg width="30" height="30">
+                    <use xlink:href="img/sprite.svg#icon-arrow"></use>
+                  </svg>
+                </button>
+              </div>
+              <div class="product-images swiper" data-iter="1">
+                <ul class="product-images-list swiper-wrapper">
+                  <li class="product-images-item swiper-slide">
+                    <img src="img/catalog-1.jpg" width="579" height="570" alt="Мягкое кресло SKY ONE фабрики CIRCU">
+                  </li>
+                  <li class="product-images-item swiper-slide">
+                    <img src="img/catalog-2.jpg" width="579" height="570" alt="Мягкое кресло SKY ONE фабрики CIRCU">
+                  </li>
+                  <li class="product-images-item swiper-slide">
+                    <img src="img/catalog-3.jpg" width="579" height="570" alt="Мягкое кресло SKY ONE фабрики CIRCU">
+                  </li>
+                  <li class="product-images-item swiper-slide">
+                    <img src="img/catalog-4.jpg" width="579" height="570" alt="Мягкое кресло SKY ONE фабрики CIRCU">
+                  </li>
+                  <li class="product-images-item swiper-slide">
+                    <img src="img/catalog-4.jpg" width="579" height="570" alt="Мягкое кресло SKY ONE фабрики CIRCU">
+                  </li>
+                </ul>
+                <div class="product-pagination swiper-pagination"></div>
+              </div>
+            </div>
+            <div class="product-info">
+              <div class="product-class">
+                <p class="product-class-item">Код товара: <span class="product-class-item-article" data-cart="article">IC-73131</span></p>
+                <p class="product-class-item">Ценовой диапазон: <span>Премиум</span></p>
+              </div>
+              <div class="product-order">
+                <p class="product-by-order">Под заказ</p>
+                <p class="product-term">
+                  <svg width="15" height="15">
+                    <use xlink:href="img/sprite.svg#icon-clock"></use>
+                  </svg>
+                  Срок производства: <span>70 дней</span>
+                </p>
+              </div>
+              <div class="product-price">
+                <p class="product-price-value"><span data-cart="price">1 392 869</span> ₽</p>
+                /
+                <p class="product-price-value"><span>15 957</span> €</p>
+              </div>
+              <div class="product-buttons">
+                <button class="product-button btn black-button" data-cart="add-button">Добавить В корзину
+                  <svg width="18" height="21">
+                    <use xlink:href="img/sprite.svg#icon-cart"></use>
+                  </svg>
+                </button>
+                <button class="product-button btn black-border-button">Состав по предметам</button>
+                <div class="visually-hidden" data-cart="max-number">5</div>
+              </div>
+              <ul class="product-into">
+                <li class="product-info-item">
+                  <p class="product-info-item-text">Фабрика</p>
+                  -
+                  <p class="product-info-item-text product-info-item-text-brown">CIRCU</p>
+                </li>
+                <li class="product-info-item">
+                  <p class="product-info-item-text">Предмет</p>
+                  -
+                  <p class="product-info-item-text">Кресло</p>
+                </li>
+                <li class="product-info-item">
+                  <p class="product-info-item-text">Страна производства</p>
+                  -
+                  <p class="product-info-item-text">Португалия</p>
+                </li>
+                <li class="product-info-item">
+                  <p class="product-info-item-text">Ценовой сегмент</p>
+                  -
+                  <p class="product-info-item-text">Средне-высокий</p>
+                </li>
+                <li class="product-info-item">
+                  <p class="product-info-item-text">Стиль</p>
+                  -
+                  <p class="product-info-item-text product-info-item-text-brown">Современный</p>
+                </li>
+                <li class="product-info-item">
+                  <p class="product-info-item-text">Отделка</p>
+                  -
+                  <p class="product-info-item-text">Лак матовый или глянцевый</p>
+                </li>
+                <li class="product-info-item">
+                  <p class="product-info-item-text">Размер</p>
+                  -
+                  <p class="product-info-item-text" data-cart="size">83х78х97</p>
+                </li>
+              </ul>
+            </div>
+            <div class="product-contacts-buttons">
+              <div class="product-contacts">
+                <div class="product-contacts-phone">
+                  <a class="product-phone-icon">
+                    <svg width="15" height="15">
+                      <use xlink:href="img/sprite.svg#icon-phone"></use>
+                    </svg>
+                  </a>
+                  <div class="product-contacts-phone-texts">
+                    <a class="product-phone">8 (800) 500 29 40</a>
+                    <p class="product-contacts-text">Позвоните нам и мы поможем вам с выбором</p>
+                  </div>
+                </div>
+                <a class="product-button btn grey-button">Задать вопрос</a>
+              </div>
+              <div class="product-catalog-buttons">
+                <a class="product-catalog-button product-catalog-button-prev" href="catalog.html">
+                  <svg width="15" height="15">
+                    <use xlink:href="img/sprite.svg#icon-arrow"></use>
+                  </svg>
+                  Все современные<br> кресла и диваны
+                </a>
+                <a class="product-catalog-button product-catalog-button-next" href="catalog.html">
+                  Все современные<br> кресла и диваны
+                  <svg width="15" height="15">
+                    <use xlink:href="img/sprite.svg#icon-arrow"></use>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="info section-side">
+        <div class="info-container container" data-tabs="parent">
+          <div class="info-controls-swiper swiper">
+            <ul class="info-controls swiper-wrapper" data-tabs="controls">
+              <li class="info-controls-item swiper-slide">
+                <button class="info-controls-button" data-tabs="control">Описание</button>
+              </li>
+              <li class="info-controls-item swiper-slide">
+                <button class="info-controls-button" data-tabs="control">Отделки и материалы</button>
+              </li>
+              <li class="info-controls-item swiper-slide">
+                <button class="info-controls-button" data-tabs="control">Доставка и оплата</button>
+              </li>
+            </ul>
+          </div>
+          <div class="info-content" data-tabs="content">
+            <div class="info-element" data-tabs="element">
+              <div class="info-row">
+                <div class="info-part-texts">
+                  <h2 class="info-header">Описание</h2>
+                  <p class="info-text">Яркий, ироничный и дерзкий бренд от самого эксцентричного и модного дизайнера Америки, не признающего скучные и одноцветные интерьеры. Джонатан Адлер — «бунтарь», диктующий миру дизайна свои правила стиля. Его мебель, свет и аксессуары созданы для тех, кто не боится быть заметным! Предметы интерьера Jonathan Adler – мощнейший антидепрессант и источник отличного настроения на каждый день. Мы являемся эксклюзивными представителями бренда в России.</p>
+                </div>
+                <div class="info-part-list">
+                  <h2 class="info-header">Характеристики</h2>
+                  <ul class="info-list">
+                    <li class="info-item">
+                      <div class="info-item-part">
+                        <p class="info-item-text">Фабрика</p>
+                      </div>
+                      <p class="info-item-text info-text-brown">CIRCU</p>
+                    </li>
+                    <li class="info-item">
+                      <div class="info-item-part">
+                        <p class="info-item-text">Предмет</p>
+                      </div>
+                      <p class="info-item-text">Кресло</p>
+                    </li>
+                    <li class="info-item">
+                      <div class="info-item-part">
+                        <p class="info-item-text">Страна производства</p>
+                      </div>
+                      <p class="info-item-text">Португалия</p>
+                    </li>
+                    <li class="info-item">
+                      <div class="info-item-part">
+                        <p class="info-item-text">Ценовой сегмент</p>
+                      </div>
+                      <p class="info-item-text">Средне-высокий</p>
+                    </li>
+                    <li class="info-item">
+                      <div class="info-item-part">
+                        <p class="info-item-text">Стиль</p>
+                      </div>
+                      <p class="info-item-text info-text-brown">Современный</p>
+                    </li>
+                    <li class="info-item">
+                      <div class="info-item-part">
+                        <p class="info-item-text">Отделка</p>
+                      </div>
+                      <p class="info-item-text">Лак матовый или глянцевый</p>
+                    </li>
+                  </ul>
+                </div>   
+              </div>
+            </div>
+            <div class="info-element" data-tabs="element">
+              <div class="info-row">
+                <div class="info-part-texts">
+                  <h2 class="info-header">Отделки и материалы</h2>
+                  <p class="info-text">Яркий, ироничный и дерзкий бренд от самого эксцентричного и модного дизайнера Америки, не признающего скучные и одноцветные интерьеры. Джонатан Адлер — «бунтарь», диктующий миру дизайна свои правила стиля. Его мебель, свет и аксессуары созданы для тех, кто не боится быть заметным! Предметы интерьера Jonathan Adler – мощнейший антидепрессант и источник отличного настроения на каждый день. Мы являемся эксклюзивными представителями бренда в России.</p>
+                </div>
+                <div class="info-part-list">
+                  <h2 class="info-header">Характеристики</h2>
+                  <ul class="info-list">
+                    <li class="info-item">
+                      <div class="info-item-part">
+                        <p class="info-item-text">Фабрика</p>
+                      </div>
+                      <p class="info-item-text info-text-brown">CIRCU</p>
+                    </li>
+                    <li class="info-item">
+                      <div class="info-item-part">
+                        <p class="info-item-text">Предмет</p>
+                      </div>
+                      <p class="info-item-text">Кресло</p>
+                    </li>
+                    <li class="info-item">
+                      <div class="info-item-part">
+                        <p class="info-item-text">Страна производства</p>
+                      </div>
+                      <p class="info-item-text">Португалия</p>
+                    </li>
+                    <li class="info-item">
+                      <div class="info-item-part">
+                        <p class="info-item-text">Ценовой сегмент</p>
+                      </div>
+                      <p class="info-item-text">Средне-высокий</p>
+                    </li>
+                    <li class="info-item">
+                      <div class="info-item-part">
+                        <p class="info-item-text">Стиль</p>
+                      </div>
+                      <p class="info-item-text info-text-brown">Современный</p>
+                    </li>
+                    <li class="info-item">
+                      <div class="info-item-part">
+                        <p class="info-item-text">Отделка</p>
+                      </div>
+                      <p class="info-item-text">Лак матовый или глянцевый</p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="info-element" data-tabs="element">
+              <div class="info-row">
+                <div class="info-part-texts">
+                  <h2 class="info-header">Доставка и оплата</h2>
+                  <p class="info-text">Яркий, ироничный и дерзкий бренд от самого эксцентричного и модного дизайнера Америки, не признающего скучные и одноцветные интерьеры. Джонатан Адлер — «бунтарь», диктующий миру дизайна свои правила стиля. Его мебель, свет и аксессуары созданы для тех, кто не боится быть заметным! Предметы интерьера Jonathan Adler – мощнейший антидепрессант и источник отличного настроения на каждый день. Мы являемся эксклюзивными представителями бренда в России.</p>
+                </div>
+                <div class="info-part-list">
+                  <h2 class="info-header">Характеристики</h2>
+                  <ul class="info-list">
+                    <li class="info-item">
+                      <div class="info-item-part">
+                        <p class="info-item-text">Фабрика</p>
+                      </div>
+                      <p class="info-item-text info-text-brown">CIRCU</p>
+                    </li>
+                    <li class="info-item">
+                      <div class="info-item-part">
+                        <p class="info-item-text">Предмет</p>
+                      </div>
+                      <p class="info-item-text">Кресло</p>
+                    </li>
+                    <li class="info-item">
+                      <div class="info-item-part">
+                        <p class="info-item-text">Страна производства</p>
+                      </div>
+                      <p class="info-item-text">Португалия</p>
+                    </li>
+                    <li class="info-item">
+                      <div class="info-item-part">
+                        <p class="info-item-text">Ценовой сегмент</p>
+                      </div>
+                      <p class="info-item-text">Средне-высокий</p>
+                    </li>
+                    <li class="info-item">
+                      <div class="info-item-part">
+                        <p class="info-item-text">Стиль</p>
+                      </div>
+                      <p class="info-item-text info-text-brown">Современный</p>
+                    </li>
+                    <li class="info-item">
+                      <div class="info-item-part">
+                        <p class="info-item-text">Отделка</p>
+                      </div>
+                      <p class="info-item-text">Лак матовый или глянцевый</p>
+                    </li>
+                  </ul>
+                </div>  
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="cart section-side">
+        <div class="cart-container container">
+          <h2 class="cart-header">Состав по предметам</h2>
+          <div class="cart-table">
+            <div class="cart-table-names">
+              <div class="cart-table-part cart-table-part-image">
+                <p class="cart-table-part-name">Фото</p>
+              </div>
+              <div class="cart-table-part cart-table-part-names">
+                <p class="cart-table-part-name">Наименование</p>
+              </div>
+              <div class="cart-table-part cart-table-part-article">
+                <p class="cart-table-part-name">Артикул</p>
+              </div>
+              <div class="cart-table-part cart-table-part-size">
+                <p class="cart-table-part-name">Размер</p>
+              </div>
+              <div class="cart-table-part cart-table-part-price">
+                <p class="cart-table-part-name">Цена</p>
+              </div>
+              <div class="cart-table-part cart-table-part-number">
+                <p class="cart-table-part-name">Количество</p>
+              </div>
+              <div class="cart-table-part cart-table-part-sum">
+                <p class="cart-table-part-name">Сумма</p>
+              </div>
+              <div class="cart-table-part cart-table-part-check">
+                <p class="cart-table-part-name">Выбрано</p>
+              </div>
+              <div class="cart-table-part cart-table-part-remove">
+                <p class="cart-table-part-name"></p>
+              </div>
+            </div>
+            <p class="cart-no-items">В корзине ничего нет. Добавьте товары в корзину</p>
+            <div class="cart-lists">
+              <!--<div class="cart-list">
+                    <div class="cart-table-part cart-table-part-image">
+                      <div class="cart-image">
+                        <img src="img/catalog-1.jpg" width="130" height="130" alt="Кресло JAGGER">
+                      </div>
+                    </div>
+                    <div class="cart-table-part cart-table-part-names">
+                      <p class="cart-table-item-name">Наименование</p>
+                      <p class="cart-table-item-text">Кресло JAGGER</p>
+                    </div>
+                    <div class="cart-table-part cart-table-part-article">
+                      <p class="cart-table-item-name">Артикул</p>
+                      <p class="cart-table-item-text">IC-83168</p>
+                    </div>
+                    <div class="cart-table-part cart-table-part-size">
+                      <p class="cart-table-item-name">Размер</p>
+                      <p class="cart-table-item-text">83х78х97</p>
+                    </div>
+                    <div class="cart-table-part cart-table-part-price">
+                      <p class="cart-table-item-name">Цена</p>
+                      <p class="cart-table-item-text">1 392 869 Р</p>
+                    </div>
+                    <div class="cart-table-part cart-table-part-number">
+                      <div class="cart-buttons-number">
+                        <button class="cart-button-number cart-button-number-less">
+                          <svg width="14" height="7">
+                            <use xlink:href="img/sprite.svg#icon-arrow"></use>
+                          </svg>
+                        </button>
+                        <p class="cart-number">1</p>
+                        <button class="cart-button-number cart-button-number-more">
+                          <svg width="14" height="7">
+                            <use xlink:href="img/sprite.svg#icon-arrow"></use>
+                          </svg>
+                        </button>
+                      </div>
+                    </div>
+                    <div class="cart-table-part cart-table-part-sum">
+                      <p class="cart-table-item-name">Сумма</p>
+                      <p class="cart-table-item-text">1 392 869 Р</p>
+                    </div>
+                    <div class="cart-table-part cart-table-part-check">
+                      <div class="cart-table-choose cart-table-choose-true">
+                        <svg width="14" height="10">
+                          <use xlink:href="img/sprite.svg#icon-tick"></use>
+                        </svg>
+                      </div>
+                    </div>
+                    <div class="cart-table-part cart-table-part-remove">
+                      <button class="cart-item-delete-button">
+                        ✖
+                      </button>
+                    </div>
+                  </div>
+                  <div class="cart-list">
+                    <div class="cart-table-part cart-table-part-image">
+                      <div class="cart-image">
+                        <img src="img/catalog-1.jpg" width="130" height="130" alt="Кресло JAGGER">
+                      </div>
+                    </div>
+                    <div class="cart-table-part cart-table-part-names">
+                      <p class="cart-table-item-name">Наименование</p>
+                      <p class="cart-table-item-text">Кресло JAGGER</p>
+                    </div>
+                    <div class="cart-table-part cart-table-part-size">
+                      <p class="cart-table-item-name">Размер</p>
+                      <p class="cart-table-item-text">IC-83168</p>
+                    </div>
+                    <div class="cart-table-part cart-table-part-article">
+                      <p class="cart-table-item-name">Артикул</p>
+                      <p class="cart-table-item-text">83х78х97</p>
+                    </div>
+                    <div class="cart-table-part cart-table-part-price">
+                      <p class="cart-table-item-name">Цена</p>
+                      <p class="cart-table-item-text">1 392 869 Р</p>
+                    </div>
+                    <div class="cart-table-part cart-table-part-number">
+                      <div class="cart-buttons-number">
+                        <button class="cart-button-number cart-button-number-less">
+                          <svg width="14" height="7">
+                            <use xlink:href="img/sprite.svg#icon-arrow"></use>
+                          </svg>
+                        </button>
+                        <p class="cart-number">1</p>
+                        <button class="cart-button-number cart-button-number-more">
+                          <svg width="14" height="7">
+                            <use xlink:href="img/sprite.svg#icon-arrow"></use>
+                          </svg>
+                        </button>
+                      </div>
+                    </div>
+                    <div class="cart-table-part cart-table-part-sum">
+                      <p class="cart-table-item-name">Сумма</p>
+                      <p class="cart-table-item-text">1 392 869 Р</p>
+                    </div>
+                    <div class="cart-table-part cart-table-part-check">
+                      <div class="cart-table-choose cart-table-choose-true">
+                        <svg width="14" height="10">
+                          <use xlink:href="img/sprite.svg#icon-tick"></use>
+                        </svg>
+                      </div>
+                    </div>
+                    <div class="cart-table-part cart-table-part-remove">
+                      <button class="cart-item-delete-button">
+                        ✖
+                      </button>
+                    </div>
+                    <p class="cart-max-number visually-hidden">5</p>
+                  </div>-->
+            </div>
+          </div>
+          <div class="cart-all">
+            Общая сумма: <span class="cart-total">1 392 869</span> Р
+          </div>
+          <form class="cart-form contact-form form" action="#" method="post" target="_blank">
+            <div class="cart-form-list-button">
+              <ul class="cart-form-list">
+                <li class="cart-form-item">
+                  <label for="cart-name-1" class="visually-hidden">Как к вам обращаться?</label>
+                  <input type="text" id="cart-name-1" name="name" placeholder="Как к вам обращаться?" required>
+                </li>
+                <li class="cart-form-item">
+                  <label for="cart-phone-1" class="visually-hidden">Ваш телефон</label>
+                  <input type="tel" placeholder="+7 (___)___-__-__" maxlength="18" id="cart-phone-1" name="phone" pattern="^((\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{10,15}$" required>
+                </li>
+                <li class="cart-form-item">
+                  <label class="visually-hidden" for="cart-email-1">Электронная почта</label>
+                  <input type="email" placeholder="Email" id="cart-email-1" name="email"
+                    pattern="[a-z0-9]+@[a-z0-9]+\.[a-z]{2,3}" required>
+                </li>
+                <li class="cart-form-item-info">
+                  <input type="hidden" id="cart-info-1" name="name">
+                </li>
+              </ul>
+              <button class="cart-button btn black-button" type="submit">Оформить заказ</button>
+            </div>
+            <div class="contact-form-radio">
+              <input class="visually-hidden" type="radio" id="cart-agree-1" name="cart-agree" value="Согласен" required oninvalid="document.querySelector('.cart-agree-error-message').innerHTML = 'Поставьте отметку о согласии с Политикой конфиденциальности'">
+              <label for="cart-agree-1">Я согласен с условиями <a href="#">Политики конфиденциальности</a></label>
+              <span class="cart-agree-error-message"></span>
+            </div>
+          </form>
+        </div>
+      </section>
+      <section class="catalog-slider section-side">
+        <div class="catalog-slider-container container">
+          <h2 class="catalog-slider-header headers-center">Рекомендуем посмотреть</h2>
+          <div class="catalog-slider-element swiper">
+            <ul class="catalog-slider swiper-wrapper">
+              <li class="catalog-slider-item swiper-slide">
+                <a class="catalog-slider-item-link" href="product.html"></a>
+                <div class="catalog-slider-item-image">
+                  <img class="catalog-slider-image" src="img/catalog-5.png" width="420" height="420" alt="Рекомендуем посмотреть">
+                </div>
+                <div class="catalog-slider-item-texts">
+                  <h3 class="catalog-slider-item-header">Стол SKY B PLANE фабрики CIRCU</h3>
+                  <p class="catalog-slider-item-text">1 549 989 ₽</p>
+                </div>
+              </li>
+              <li class="catalog-slider-item swiper-slide">
+                <a class="catalog-slider-item-link" href="product.html"></a>
+                <div class="catalog-slider-item-image">
+                  <img class="catalog-slider-image" src="img/catalog-6.png" width="420" height="420" alt="Рекомендуем посмотреть">
+                </div>
+                <div class="catalog-slider-item-texts">
+                  <h3 class="catalog-slider-item-header">Комод LITTLE MERMAID фабрики CIRCU</h3>
+                  <p class="catalog-slider-item-text">939 578 ₽</p>
+                </div>
+              </li>
+              <li class="catalog-slider-item swiper-slide">
+                <a class="catalog-slider-item-link" href="product.html"></a>
+                <div class="catalog-slider-item-image">
+                  <img class="catalog-slider-image" src="img/catalog-7.png" width="420" height="420" alt="Рекомендуем посмотреть">
+                </div>
+                <div class="catalog-slider-item-texts">
+                  <h3 class="catalog-slider-item-header">Комод FANTASY AIR BALLOON фабрики CIRCU</h3>
+                  <p class="catalog-slider-item-text">1 549 989 ₽</p>
+                </div>
+              </li>
+              <li class="catalog-slider-item swiper-slide">
+                <a class="catalog-slider-item-link" href="product.html"></a>
+                <div class="catalog-slider-item-image">
+                  <img class="catalog-slider-image" src="img/catalog-8.png" width="420" height="420" alt="Рекомендуем посмотреть">
+                </div>
+                <div class="catalog-slider-item-texts">
+                  <h3 class="catalog-slider-item-header">Комод SKY B PLANE фабрики CIRCU</h3>
+                  <p class="catalog-slider-item-text">1 839 875 ₽</p>
+                </div>
+              </li>
+              <li class="catalog-slider-item swiper-slide">
+                <a class="catalog-slider-item-link" href="product.html"></a>
+                <div class="catalog-slider-item-image">
+                  <img class="catalog-slider-image" src="img/catalog-5.png" width="420" height="420" alt="Рекомендуем посмотреть">
+                </div>
+                <div class="catalog-slider-item-texts">
+                  <h3 class="catalog-slider-item-header">Стол SKY B PLANE фабрики CIRCU</h3>
+                  <p class="catalog-slider-item-text">1 549 989 ₽</p>
+                </div>
+              </li>
+              <li class="catalog-slider-item swiper-slide">
+                <a class="catalog-slider-item-link" href="product.html"></a>
+                <div class="catalog-slider-item-image">
+                  <img class="catalog-slider-image" src="img/catalog-6.png" width="420" height="420" alt="Рекомендуем посмотреть">
+                </div>
+                <div class="catalog-slider-item-texts">
+                  <h3 class="catalog-slider-item-header">Комод LITTLE MERMAID фабрики CIRCU</h3>
+                  <p class="catalog-slider-item-text">939 578 ₽</p>
+                </div>
+              </li>
+              <li class="catalog-slider-item swiper-slide">
+                <a class="catalog-slider-item-link" href="product.html"></a>
+                <div class="catalog-slider-item-image">
+                  <img class="catalog-slider-image" src="img/catalog-7.png" width="420" height="420" alt="Рекомендуем посмотреть">
+                </div>
+                <div class="catalog-slider-item-texts">
+                  <h3 class="catalog-slider-item-header">Комод FANTASY AIR BALLOON фабрики CIRCU</h3>
+                  <p class="catalog-slider-item-text">1 549 989 ₽</p>
+                </div>
+              </li>
+              <li class="catalog-slider-item swiper-slide">
+                <a class="catalog-slider-item-link" href="product.html"></a>
+                <div class="catalog-slider-item-image">
+                  <img class="catalog-slider-image" src="img/catalog-8.png" width="420" height="420" alt="Рекомендуем посмотреть">
+                </div>
+                <div class="catalog-slider-item-texts">
+                  <h3 class="catalog-slider-item-header">Комод SKY B PLANE фабрики CIRCU</h3>
+                  <p class="catalog-slider-item-text">1 839 875 ₽</p>
+                </div>
+              </li>
+            </ul>
+            <div class="catalog-slider-buttons">
+              <button class="catalog-slider-prev swiper-btn swiper-btn-dark swiper-btn-prev">
+                <svg width="18" height="14">
+                  <use xlink:href="img/sprite.svg#icon-arrow"></use>
+                </svg>
+              </button>
+              <button class="catalog-slider-next swiper-btn swiper-btn-dark swiper-btn-next">
+                <svg width="18" height="14">
+                  <use xlink:href="img/sprite.svg#icon-arrow"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="catalog-slider section-side">
+        <div class="catalog-slider-container container">
+          <h2 class="catalog-slider-header headers-center">Товары из этой коллекции</h2>
+          <div class="catalog-slider-element swiper">
+            <ul class="catalog-slider swiper-wrapper">
+              <li class="catalog-slider-item swiper-slide">
+                <a class="catalog-slider-item-link" href="product.html"></a>
+                <div class="catalog-slider-item-image">
+                  <img class="catalog-slider-item-image" src="img/catalog-9.png" width="420" height="420" alt="Рекомендуем посмотреть">
+                </div>
+                <div class="catalog-slider-item-texts">
+                  <h3 class="catalog-slider-item-header">Стол SKY B PLANE фабрики CIRCU</h3>
+                  <p class="catalog-slider-item-text">1 549 989 ₽</p>
+                </div>
+              </li>
+              <li class="catalog-slider-item swiper-slide">
+                <a class="catalog-slider-item-link" href="product.html"></a>
+                <div class="catalog-slider-item-image">
+                  <img class="catalog-slider-item-image" src="img/catalog-10.png" width="420" height="420" alt="Рекомендуем посмотреть">
+                </div>
+                <div class="catalog-slider-item-texts">
+                  <h3 class="catalog-slider-item-header">Комод LITTLE MERMAID фабрики CIRCU</h3>
+                  <p class="catalog-slider-item-text">939 578 ₽</p>
+                </div>
+              </li>
+              <li class="catalog-slider-item swiper-slide">
+                <a class="catalog-slider-item-link" href="product.html"></a>
+                <div class="catalog-slider-item-image">
+                  <img class="catalog-slider-item-image" src="img/catalog-11.png" width="420" height="420" alt="Рекомендуем посмотреть">
+                </div>
+                <div class="catalog-slider-item-texts">
+                  <h3 class="catalog-slider-item-header">Комод FANTASY AIR BALLOON фабрики CIRCU</h3>
+                  <p class="catalog-slider-item-text">1 549 989 ₽</p>
+                </div>
+              </li>
+              <li class="catalog-slider-item swiper-slide">
+                <a class="catalog-slider-item-link" href="product.html"></a>
+                <div class="catalog-slider-item-image">
+                  <img class="catalog-slider-item-image" src="img/catalog-12.png" width="420" height="420" alt="Рекомендуем посмотреть">
+                </div>
+                <div class="catalog-slider-item-texts">
+                  <h3 class="catalog-slider-item-header">Комод SKY B PLANE фабрики CIRCU</h3>
+                  <p class="catalog-slider-item-text">1 839 875 ₽</p>
+                </div>
+              </li>
+              <li class="catalog-slider-item swiper-slide">
+                <a class="catalog-slider-item-link" href="product.html"></a>
+                <div class="catalog-slider-item-image">
+                  <img class="catalog-slider-item-image" src="img/catalog-9.png" width="420" height="420" alt="Рекомендуем посмотреть">
+                </div>
+                <div class="catalog-slider-item-texts">
+                  <h3 class="catalog-slider-item-header">Стол SKY B PLANE фабрики CIRCU</h3>
+                  <p class="catalog-slider-item-text">1 549 989 ₽</p>
+                </div>
+              </li>
+              <li class="catalog-slider-item swiper-slide">
+                <a class="catalog-slider-item-link" href="product.html"></a>
+                <div class="catalog-slider-item-image">
+                  <img class="catalog-slider-item-image" src="img/catalog-10.png" width="420" height="420" alt="Рекомендуем посмотреть">
+                </div>
+                <div class="catalog-slider-item-texts">
+                  <h3 class="catalog-slider-item-header">Комод LITTLE MERMAID фабрики CIRCU</h3>
+                  <p class="catalog-slider-item-text">939 578 ₽</p>
+                </div>
+              </li>
+              <li class="catalog-slider-item swiper-slide">
+                <a class="catalog-slider-item-link" href="product.html"></a>
+                <div class="catalog-slider-item-image">
+                  <img class="catalog-slider-item-image" src="img/catalog-11.png" width="420" height="420" alt="Рекомендуем посмотреть">
+                </div>
+                <div class="catalog-slider-item-texts">
+                  <h3 class="catalog-slider-item-header">Комод FANTASY AIR BALLOON фабрики CIRCU</h3>
+                  <p class="catalog-slider-item-text">1 549 989 ₽</p>
+                </div>
+              </li>
+              <li class="catalog-slider-item swiper-slide">
+                <a class="catalog-slider-item-link" href="product.html"></a>
+                <div class="catalog-slider-item-image">
+                  <img class="catalog-slider-item-image" src="img/catalog-12.png" width="420" height="420" alt="Рекомендуем посмотреть">
+                </div>
+                <div class="catalog-slider-item-texts">
+                  <h3 class="catalog-slider-item-header">Комод SKY B PLANE фабрики CIRCU</h3>
+                  <p class="catalog-slider-item-text">1 839 875 ₽</p>
+                </div>
+              </li>
+            </ul>
+            <div class="catalog-slider-buttons">
+              <button class="catalog-slider-prev swiper-btn swiper-btn-dark swiper-btn-prev">
+                <svg width="18" height="14">
+                  <use xlink:href="img/sprite.svg#icon-arrow"></use>
+                </svg>
+              </button>
+              <button class="catalog-slider-next swiper-btn swiper-btn-dark swiper-btn-next">
+                <svg width="18" height="14">
+                  <use xlink:href="img/sprite.svg#icon-arrow"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="request section">
+        <ul class="request-images">
+          <li class="request-images-item">
+            <img class="request-image" src="img/photo-16.jpg" width="640" height="640" alt="Получить консультацию">
+          </li>
+          <li class="request-images-item">
+            <img class="request-image" src="img/photo-17.jpg" width="640" height="640" alt="Получить консультацию">
+          </li>
+          <li class="request-images-item">
+            <img class="request-image" src="img/photo-18.jpg" width="640" height="640" alt="Получить консультацию">
+          </li>
+        </ul>
+        <div class="request-container container">
+          <div class="request-texts-form">
+            <h2 class="request-header-small headers">Оставьте заявку и мы вам перезвоним</h2>
+            <form class="contacts-form contact-form form" action="#" method="post">
+              <ul class="contact-form-list">
+                <li class="contact-form-item">
+                  <label for="request-name">Ваше имя*</label>
+                  <input type="text" id="request-name" name="name" required>
+                </li>
+                <li class="contact-form-item">
+                  <label for="request-phone">Ваш телефон*</label>
+                  <input type="tel" placeholder="+7 (___)___-__-__" maxlength="18" id="request-phone" name="phone" pattern="^((\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{10,15}$" required>
+                </li>
+                <li class="contact-form-item contact-form-item-big">
+                  <label for="request-message">Ваше сообщение</label>
+                  <textarea id="request-message" name="message" placeholder="Ваше сообщение"></textarea>
+                </li>
+              </ul>
+              <div class="contact-form-agree-button">
+                <div class="contact-form-item">
+                  <input type="radio" class="visually-hidden" id="request-agree" name="request-agree" value="yes">
+                  <label for="request-agree">Я согласен на <a href="#">обработку персональных данных</a></label>
+                </div>
+                <button class="contact-form-button btn black-button" type="submit">Отправить</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+      <section class="partners section section-black">
+        <div class="partners-container container swiper">
+          <h2 class="visually-hidden">Партнеры</h2>
+          <ul class="partners-list swiper-wrapper">
+            <li class="partners-item swiper-slide">
+              <img class="partners-item-image" src="img/logo-weekend.png" width="141" height="23" alt="Партнеры">
+            </li>
+            <li class="partners-item swiper-slide">
+              <img class="partners-item-image" src="img/logo-araminh.png" width="128" height="31" alt="Партнеры">
+            </li>
+            <li class="partners-item swiper-slide">
+              <img class="partners-item-image" src="img/logo-start.png" width="132" height="60" alt="Партнеры">
+            </li>
+            <li class="partners-item swiper-slide">
+              <img class="partners-item-image" src="img/logo-weekend.png" width="141" height="23" alt="Партнеры">
+            </li>
+            <li class="partners-item swiper-slide">
+              <img class="partners-item-image" src="img/logo-araminh.png" width="128" height="31" alt="Партнеры">
+            </li>
+            <li class="partners-item swiper-slide">
+              <img class="partners-item-image" src="img/logo-start.png" width="132" height="60" alt="Партнеры">
+            </li>
+          </ul>
+          <div class="partners-buttons">
+            <button class="partners-prev swiper-btn swiper-btn-light swiper-btn-prev">
+              <svg width="18" height="14">
+                <use xlink:href="img/sprite.svg#icon-arrow"></use>
+              </svg>
+            </button>
+            <button class="partners-next swiper-btn swiper-btn-light swiper-btn-next">
+              <svg width="18" height="14">
+                <use xlink:href="img/sprite.svg#icon-arrow"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </section>
+      <div class="btn-up btn-up-hide btn-up_hide"></div>
+    </main>
+    <footer class="footer section-black">
+      <div class="footer-section">
+        <div class="footer-container container">
+          <div class="footer-part" data-hide="item">
+            <button class="footer-part-button" data-hide="button">Компания</button>
+            <ul class="footer-list" data-hide="mobile-hidden">
+              <li class="footer-item">
+                <a href="company.html">О компании</a>
+              </li>
+              <li class="footer-item">
+                <a href="#">Проекты</a>
+              </li>
+              <li class="footer-item">
+                <a href="#">Партнеры</a>
+              </li>
+              <li class="footer-item">
+                <a href="blog.html">Новости</a>
+              </li>
+              <li class="footer-item">
+                <a href="#">Команда</a>
+              </li>
+              <li class="footer-item">
+                <a href="#">Контакты</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-part" data-hide="item">
+            <button class="footer-part-button" data-hide="button">Информация</button>
+            <ul class="footer-list" data-hide="mobile-hidden">
+              <li class="footer-item">
+                <a href="#">Способы оплаты</a>
+              </li>
+              <li class="footer-item">
+                <a href="#">Условия доставки</a>
+              </li>
+              <li class="footer-item">
+                <a href="#">Гарантия на товар</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-part" data-hide="item">
+            <button class="footer-part-button" data-hide="button">Сотрудничество</button>
+            <ul class="footer-list" data-hide="mobile-hidden">
+              <li class="footer-item">
+                <a href="#">Дизайнерам</a>
+              </li>
+              <li class="footer-item">
+                <a href="#">Поставщикам</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-part footer-part-payment" data-hide="item">
+            <button class="footer-part-button" data-hide="button">Способы оплаты</button>
+            <div class="footer-hidden" data-hide="mobile-hidden">
+              <p class="footer-part-text">Вы можете оплатить покупки онлайн, наличными в наших салонах, а также по выставленному счёту</p>
+              <ul class="footer-logo-list">
+                <li class="footer-logo-item">
+                  <a href="#"></a>
+                  <img class="footer-logo" src="img/logo-visa.png" width="35" height="11" alt="Виза">
+                </li>
+                <li class="footer-logo-item">
+                  <a href="#"></a>
+                  <img class="footer-logo" src="img/logo-mastercard.png" width="33" height="20" alt="Мастеркард">
+                </li>
+                <li class="footer-logo-item">
+                  <a href="#"></a>
+                  <img class="footer-logo" src="img/logo-mir.png" width="38" height="10" alt="Мир">
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer-part footer-part-contacts" data-hide="item">
+            <button class="footer-part-button" data-hide="button">Контакты</button>
+            <div class="footer-hidden" data-hide="mobile-hidden">
+              <a class="footer-contacts-link" href="tel:88005002940" data-hide="hidden">8 (800) 500-29-40</a>
+              <button class="footer-button brown-color-button" data-open-modal="call">Заказать звонок</button>
+              <ul class="footer-social social">
+                <li class="social-item">
+                  <a class="social-link" href="#">
+                    <span class="social-item-icon">
+                      <svg width="20" height="20">
+                        <use xlink:href="img/sprite.svg#icon-facebook"></use>
+                      </svg>
+                    </span>
+                  </a>
+                </li>
+                <li class="social-item">
+                  <a class="social-link" href="#">
+                    <span class="social-item-icon">
+                      <svg width="18" height="18">
+                        <use xlink:href="img/sprite.svg#icon-whatsapp"></use>
+                      </svg>
+                    </span>
+                  </a>
+                </li>
+                <li class="social-item">
+                  <a class="social-link" href="#">
+                    <span class="social-item-icon">
+                      <svg width="18" height="18">
+                        <use xlink:href="img/sprite.svg#icon-telegram"></use>
+                      </svg>
+                    </span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-section">
+        <div class="footer-copyright container">
+          <a class="footer-main-logo" href="index.html">
+            <img src="img/logo.png" width="187" height="43" alt="Логотип Бильярд вип">
+          </a>
+          <p class="footer-copyright-text">2020 © Группа компаний Бильярд №1</p>
+          <a class="footer-copyright-link" href="#">Политика конфиденциальности</a>
+          <a class="footer-copyright-link" href="#">Публичная  оферта</a>
+        </div>
+      </div>
+    </footer>
+    <section class="modal modal--preload" data-modal="call">
+      <div class="modal-wrapper">
+        <div class="modal-overlay" data-close-modal="data-close-modal">
+        </div>
+        <div class="modal-content modal-content-contacts">
+          <div class="contacts-texts">
+            <div class="contacts-header-text">
+              <h2 class="contacts-header small-header">Заказать звонок</h2>
+            </div>
+            <form class="contacts-form contact-form form" action="#" method="post">
+              <ul class="contact-form-list">
+                <li class="contact-form-item">
+                  <label for="modal-name">Ваше имя*</label>
+                  <input type="text" id="modal-name" name="name" required>
+                </li>
+                <li class="contact-form-item">
+                  <label for="modal-phone">Ваш телефон*</label>
+                  <input type="tel" placeholder="+7 (___)___-__-__" maxlength="18" id="modal-phone" name="phone" pattern="^((\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{10,15}$" required>
+                </li>
+                <li class="contact-form-item">
+                  <label for="modal-email">Электронная почта</label>
+                  <input type="email" placeholder="Email" id="modal-email" name="email"
+                    pattern="[a-z0-9]+@[a-z0-9]+\.[a-z]{2,3}" required>
+                </li>
+                <li class="contact-form-item">
+                  <label for="modal-message">Ваше сообщение</label>
+                  <textarea id="modal-message" name="message" placeholder="Ваше сообщение"></textarea>
+                </li>
+                <li class="contact-form-item">
+                  <input type="radio" class="visually-hidden" id="modal-agree" name="modal-agree" value="yes">
+                  <label for="modal-agree">Я согласен на <a href="#">обработку персональных данных</a></label>
+                </li>
+              </ul>
+              <button class="contact-form-button btn black-button" type="submit">Отправить</button>
+            </form>
+          </div>
+          <button class="modal-close-btn" type="button" aria-label="Закрыть попап" data-close-modal="data-close-modal" data-focus="data-focus">
+            <svg width="15" height="15">
+              <use xlink:href="img/sprite.svg#icon-cross"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </section>
+    <section class="modal modal--preload" data-modal="cart">
+      <div class="modal-wrapper">
+        <div class="modal-overlay" data-close-modal="data-close-modal">
+        </div>
+        <div class="modal-content modal-content-cart">
+          <div class="cart">
+            <div class="cart-container">
+              <h2 class="cart-header">Состав по предметам</h2>
+              <div class="cart-table">
+                <div class="cart-table-names">
+                  <div class="cart-table-part cart-table-part-image">
+                    <p class="cart-table-part-name">Фото</p>
+                  </div>
+                  <div class="cart-table-part cart-table-part-names">
+                    <p class="cart-table-part-name">Наименование</p>
+                  </div>
+                  <div class="cart-table-part cart-table-part-article">
+                    <p class="cart-table-part-name">Артикул</p>
+                  </div>
+                  <div class="cart-table-part cart-table-part-size">
+                    <p class="cart-table-part-name">Размер</p>
+                  </div>
+                  <div class="cart-table-part cart-table-part-price">
+                    <p class="cart-table-part-name">Цена</p>
+                  </div>
+                  <div class="cart-table-part cart-table-part-number">
+                    <p class="cart-table-part-name">Количество</p>
+                  </div>
+                  <div class="cart-table-part cart-table-part-sum">
+                    <p class="cart-table-part-name">Сумма</p>
+                  </div>
+                  <div class="cart-table-part cart-table-part-check">
+                    <p class="cart-table-part-name">Выбрано</p>
+                  </div>
+                  <div class="cart-table-part cart-table-part-remove">
+                    <p class="cart-table-part-name"></p>
+                  </div>
+                </div>
+                <p class="cart-no-items">В корзине ничего нет. Добавьте товары в корзину</p>
+                <div class="cart-lists">
+                  <!--<div class="cart-list">
+                    <div class="cart-table-part cart-table-part-image">
+                      <div class="cart-image">
+                        <img src="img/catalog-1.jpg" width="130" height="130" alt="Кресло JAGGER">
+                      </div>
+                    </div>
+                    <div class="cart-table-part cart-table-part-names">
+                      <p class="cart-table-item-name">Наименование</p>
+                      <p class="cart-table-item-text">Кресло JAGGER</p>
+                    </div>
+                    <div class="cart-table-part cart-table-part-article">
+                      <p class="cart-table-item-name">Артикул</p>
+                      <p class="cart-table-item-text">IC-83168</p>
+                    </div>
+                    <div class="cart-table-part cart-table-part-size">
+                      <p class="cart-table-item-name">Размер</p>
+                      <p class="cart-table-item-text">83х78х97</p>
+                    </div>
+                    <div class="cart-table-part cart-table-part-price">
+                      <p class="cart-table-item-name">Цена</p>
+                      <p class="cart-table-item-text">1 392 869 Р</p>
+                    </div>
+                    <div class="cart-table-part cart-table-part-number">
+                      <div class="cart-buttons-number">
+                        <button class="cart-button-number cart-button-number-less">
+                          <svg width="14" height="7">
+                            <use xlink:href="img/sprite.svg#icon-arrow"></use>
+                          </svg>
+                        </button>
+                        <p class="cart-number">1</p>
+                        <button class="cart-button-number cart-button-number-more">
+                          <svg width="14" height="7">
+                            <use xlink:href="img/sprite.svg#icon-arrow"></use>
+                          </svg>
+                        </button>
+                      </div>
+                    </div>
+                    <div class="cart-table-part cart-table-part-sum">
+                      <p class="cart-table-item-name">Сумма</p>
+                      <p class="cart-table-item-text">1 392 869 Р</p>
+                    </div>
+                    <div class="cart-table-part cart-table-part-check">
+                      <div class="cart-table-choose cart-table-choose-true">
+                        <svg width="14" height="10">
+                          <use xlink:href="img/sprite.svg#icon-tick"></use>
+                        </svg>
+                      </div>
+                    </div>
+                    <div class="cart-table-part cart-table-part-remove">
+                      <button class="cart-item-delete-button">
+                        ✖
+                      </button>
+                    </div>
+                  </div>
+                  <div class="cart-list">
+                    <div class="cart-table-part cart-table-part-image">
+                      <div class="cart-image">
+                        <img src="img/catalog-1.jpg" width="130" height="130" alt="Кресло JAGGER">
+                      </div>
+                    </div>
+                    <div class="cart-table-part cart-table-part-names">
+                      <p class="cart-table-item-name">Наименование</p>
+                      <p class="cart-table-item-text">Кресло JAGGER</p>
+                    </div>
+                    <div class="cart-table-part cart-table-part-size">
+                      <p class="cart-table-item-name">Размер</p>
+                      <p class="cart-table-item-text">IC-83168</p>
+                    </div>
+                    <div class="cart-table-part cart-table-part-article">
+                      <p class="cart-table-item-name">Артикул</p>
+                      <p class="cart-table-item-text">83х78х97</p>
+                    </div>
+                    <div class="cart-table-part cart-table-part-price">
+                      <p class="cart-table-item-name">Цена</p>
+                      <p class="cart-table-item-text">1 392 869 Р</p>
+                    </div>
+                    <div class="cart-table-part cart-table-part-number">
+                      <div class="cart-buttons-number">
+                        <button class="cart-button-number cart-button-number-less">
+                          <svg width="14" height="7">
+                            <use xlink:href="img/sprite.svg#icon-arrow"></use>
+                          </svg>
+                        </button>
+                        <p class="cart-number">1</p>
+                        <button class="cart-button-number cart-button-number-more">
+                          <svg width="14" height="7">
+                            <use xlink:href="img/sprite.svg#icon-arrow"></use>
+                          </svg>
+                        </button>
+                      </div>
+                    </div>
+                    <div class="cart-table-part cart-table-part-sum">
+                      <p class="cart-table-item-name">Сумма</p>
+                      <p class="cart-table-item-text">1 392 869 Р</p>
+                    </div>
+                    <div class="cart-table-part cart-table-part-check">
+                      <div class="cart-table-choose cart-table-choose-true">
+                        <svg width="14" height="10">
+                          <use xlink:href="img/sprite.svg#icon-tick"></use>
+                        </svg>
+                      </div>
+                    </div>
+                    <div class="cart-table-part cart-table-part-remove">
+                      <button class="cart-item-delete-button">
+                        ✖
+                      </button>
+                    </div>
+                    <p class="cart-max-number visually-hidden">5</p>
+                  </div>-->
+                </div>
+              </div>
+              <div class="cart-all">
+                Общая сумма: <span class="cart-total">1 392 869</span> Р
+              </div>
+              <form class="cart-form contact-form form" action="#" method="post" target="_blank">
+                <div class="cart-form-list-button">
+                  <ul class="cart-form-list">
+                    <li class="cart-form-item">
+                      <label for="cart-name" class="visually-hidden">Как к вам обращаться?</label>
+                      <input type="text" id="cart-name" name="name" placeholder="Как к вам обращаться?" required>
+                    </li>
+                    <li class="cart-form-item">
+                      <label for="cart-phone" class="visually-hidden">Ваш телефон</label>
+                      <input type="tel" placeholder="+7 (___)___-__-__" maxlength="18" id="cart-phone" name="phone" pattern="^((\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{10,15}$" required>
+                    </li>
+                    <li class="cart-form-item">
+                      <label class="visually-hidden" for="cart-email">Электронная почта</label>
+                      <input type="email" placeholder="Email" id="cart-email" name="email"
+                        pattern="[a-z0-9]+@[a-z0-9]+\.[a-z]{2,3}" required>
+                    </li>
+                    <li class="cart-form-item-info">
+                      <label for="cart-name" class="visually-hidden">Товары</label>
+                      <input type="hidden" id="cart-info" name="name">
+                    </li>
+                  </ul>
+                  <button class="cart-button btn black-button" type="submit">Оформить заказ</button>
+                </div>
+                <div class="contact-form-radio">
+                  <input class="visually-hidden" type="radio" id="cart-agree" name="cart-agree" value="Согласен" required oninvalid="document.querySelector('.cart-agree-error-message').innerHTML = 'Поставьте отметку о согласии с Политикой конфиденциальности'">
+                  <label for="cart-agree">Я согласен с условиями <a href="#">Политики конфиденциальности</a></label>
+                  <span class="cart-agree-error-message"></span>
+                </div>
+              </form>
+            </div>
+            <button class="modal-close-btn" type="button" aria-label="Закрыть попап" data-close-modal="data-close-modal" data-focus="data-focus">
+              <svg width="15" height="15">
+                <use xlink:href="img/sprite.svg#icon-cross"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;"></script>
+  <script src="./js/swiper.min.js"></script>
+  <script src="./js/main.min.js"></script>
+</body>
+
+</html>

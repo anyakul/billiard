@@ -1,0 +1,111 @@
+.delivery-texts {
+  position: relative;
+  z-index: 10;
+  width: 387px;
+  margin-bottom: -170px;
+
+  @media screen and (max-width: $max-tablet) {
+    margin-bottom: 0;
+    width: 100%;
+  }
+}
+
+.delivery-text {
+  margin-bottom: 15px;
+  font-size: 19px;
+}
+
+.delivery-images {
+  width: 100%;
+  max-width: 1353px;
+  height: 640px;
+  margin: auto;
+
+  @media screen and (max-width: $max-tablet) {
+    height: 500px;
+  }
+
+  @media screen and (max-width: $max-mobile) {
+    height: 357px;
+  }
+}
+
+.delivery-images {
+  position: relative;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 640px;
+  margin-top: -10px;
+
+  @media screen and (max-width: $max-tablet) {
+    width: 100%;
+    min-width: auto;
+  }
+
+  @media screen and (max-width: $max-mobile) {
+    width: 100%;
+    min-width: 100%;
+    height: 357px;
+    margin-bottom: 20px;
+  }
+
+  img {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+
+    @media screen and (max-width: $max-tablet) {
+      height: 400px;
+    }
+
+    @media screen and (max-width: $max-mobile) {
+      height: 357px;
+    }
+  }
+
+  iframe {
+    width: 100%;
+    height: 100%;
+    border-width: 0;
+  }
+
+  @media screen and (max-width: $max-tablet) {
+    height: 500px;
+  }
+
+  .ymaps-2-1-79-ground-pane {
+    filter: opacity(1);
+    background: transparent;
+    color: $black;
+
+    &::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      right: 0;
+      z-index: 160;
+      display: block;
+      width: 1920px;
+      height: 640px;
+      background-color: #28282B;
+
+      @media screen and (max-width: $max-tablet) {
+        height: 500px;
+      }
+    }
+  }
+}
+
+.delivery-image {
+  display: block;
+  width: 100%;
+  height: 640px;
+  object-fit: cover;
+
+  @media screen and (max-width: $max-tablet) {
+    height: 500px;
+  }
+}

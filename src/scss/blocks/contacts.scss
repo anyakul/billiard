@@ -1,0 +1,118 @@
+.contacts {
+  position: relative;
+  min-height: 600px;
+
+  @media screen and (max-width: $max-mobile) {
+    padding: 0;
+  }
+}
+
+.contacts-map {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 640px;
+
+  @media screen and (max-width: $max-tablet) {
+    width: 100%;
+    min-width: auto;
+  }
+
+  @media screen and (max-width: $max-mobile) {
+    position: static;
+    order: -1;
+    width: 100%;
+    min-width: 100%;
+    height: 400px;
+    margin-bottom: 20px;
+  }
+
+  img {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+
+    @media screen and (max-width: $max-mobile) {
+      height: 400px;
+    }
+  }
+
+  iframe {
+    width: 100%;
+    height: 100%;
+    border-width: 0;
+  }
+}
+
+.delivery-images {
+  position: relative;
+}
+
+.contacts-texts {
+  max-width: 500px;
+  padding: 45px;
+  background-color: $white;
+
+  @media screen and (max-width: $max-tablet) {
+    width: 257px;
+    padding: 30px 25px;
+  }
+
+  @media screen and (max-width: $max-mobile) {
+    width: 100%;
+    padding: 0;
+  }
+}
+
+.modal {
+  .contacts-texts {
+    padding: 0;
+
+    @media screen and (max-width: $max-tablet) {
+      width: 100%;
+      padding: 0;
+    }
+  }
+}
+
+.contacts-header {
+  margin-bottom: 30px;
+  padding-bottom: 15px;
+  font-size: 24px;
+  font-family: $main-font;
+  font-weight: 500;
+
+  @media screen and (max-width: $max-tablet) {
+    margin-bottom: 20px;
+    font-size: 20px;
+  }
+}
+
+.contacts-link {
+  display: flex;
+  margin-bottom: 10px;
+  font-size: 15px;
+
+  @media (hover: hover), screen and (min-width: 0\0) {
+    &:hover,
+    &:active,
+    &:focus {
+      color: $brown;
+    }
+  }
+
+  @media screen and (max-width: $max-tablet) {
+    font-size: 14px;
+  }
+}
+
+.contacts-link-phone {
+  font-weight: 500;
+
+  @media screen and (max-width: $max-tablet) {
+    font-size: 15px;
+  }
+}

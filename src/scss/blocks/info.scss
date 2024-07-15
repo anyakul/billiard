@@ -1,0 +1,141 @@
+.info-controls-swiper {
+  margin-bottom: 40px;
+  border-bottom: 1px solid $light-grey;
+
+  @media screen and (max-width: $max-tablet) {
+    margin-bottom: 30px;
+  }
+}
+
+.info-controls-item {
+  width: auto;
+}
+
+.info-controls-button {
+  font-size: 20px;
+  padding: 20px 0;
+
+  @media (hover: hover), screen and (min-width: 0\0) {
+    &:hover,
+    &:active,
+    &:focus {
+      color: $brown;
+    }
+  }
+
+  @media screen and (max-width: $max-tablet) {
+    font-size: 16px;
+  }
+}
+
+.info-controls-button.is-active {
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 1px;
+    background-color: $brown;
+  }
+}
+
+.info-element {
+  width: 100%;
+}
+
+.info-row {
+  display: flex;
+  gap: 50px;
+  width: 100%;
+
+  @media screen and (max-width: $max-tablet) {
+    gap: 20px
+  }
+
+  @media screen and (max-width: $max-tablet) {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+.info-part-texts {
+  width: 675px;
+  min-width: 675px;
+
+  @media screen and (max-width: 1400px) {
+    width: 600px;
+    min-width: 600px;
+  }
+
+  @media screen and (max-width: $max-tablet) {
+    width: 60%;
+    min-width: 334px;
+  }
+
+  @media screen and (max-width: $max-tablet) {
+    width: 100%;
+    min-width: 100%;
+  }
+}
+
+.info-header {
+  margin-bottom: 25px;
+  font-size: 20px;
+  font-weight: 500;
+
+  @media screen and (max-width: $max-tablet) {
+    margin-bottom: 15px;
+    font-size: 18px;
+  }
+}
+
+.info-text {
+  margin-bottom: 15px;
+  font-size: 14px;
+
+  @media screen and (max-width: $max-tablet) {
+    font-size: 13px;
+  }
+
+  @media screen and (max-width: $max-tablet) {
+    margin-bottom: 10px;
+  }
+}
+
+.info-part-list {
+  width: 100%;
+
+  @media screen and (max-width: $max-tablet) {
+    width: 40%;
+  }
+
+  @media screen and (max-width: $max-tablet) {
+    width: 100%;
+    min-width: 100%;
+  }
+}
+
+.info-item {
+  position: relative;
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.info-item-part {
+  width: 50%;
+  font-size: 14px;
+  margin-right: 10px;
+}
+
+.info-item-text {
+  position: relative;
+  margin-right: 10px;
+  font-size: 14px;
+
+  @media screen and (max-width: $max-tablet) {
+    font-size: 13px;
+  }
+}

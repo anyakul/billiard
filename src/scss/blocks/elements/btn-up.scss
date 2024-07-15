@@ -1,0 +1,46 @@
+.btn-up {
+  position: fixed;
+  right: 20px;
+  bottom: 5px;
+  z-index: 50;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  cursor: pointer;
+  background-color: $white;
+  box-shadow: 0 0 6px 0 rgba(164, 164, 164, 0.20);
+
+  @media (hover: hover), screen and (min-width: 0\0) {
+    &:hover,
+    &:active,
+    &:focus {
+      box-shadow: 1px 1px 6px 2px rgba(164, 164, 164, 0.40)
+    }
+  }
+
+  @media screen and (max-width: $max-mobile) {
+    width: 30px;
+    height: 30px;
+  }
+
+  &::before {
+    content: "";
+    left: 12px;
+    top: 12px;
+    width: 20px;
+    height: 20px;
+    background: transparent no-repeat center center;
+    background-size: 100% 100%;
+    background-image: url("../img/icon-arrow.svg");
+    transform: rotate(90deg);
+  
+    @media screen and (max-width: $max-mobile) {
+      left: 12px;
+      width: 15px;
+      height: 12px;
+    }
+  }
+}
