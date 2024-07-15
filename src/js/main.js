@@ -1,7 +1,6 @@
 import * as btnUp from './modules/btn-up.js';
 import * as filter from './modules/filter.js';
 import * as cart from './modules/cart.js';
-import * as file from './modules/file.js';
 import * as headerBackgroundChange from './modules/header-background-change.js';
 import * as hide from './modules/hide.js';
 import * as header from './modules/header.js';
@@ -17,7 +16,6 @@ import {initModals} from './modules/init-modals.js';import {CustomSelect} from '
 btnUp.btnUp.addEventListener();
 cart.cart();
 header.header();
-file.file();
 filter.filter();
 headerBackgroundChange.headerBackgroundChange();
 map.map();
