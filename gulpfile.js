@@ -34,10 +34,10 @@ const mainTasks = gulp.parallel(copy, scss, jsSwiper, js, images, svg, fonts, zi
 
 const dev = gulp.series(reset, mainTasks, gulp.parallel(watcher, server))
 
-function deploy(cb) {
-  ghPages.publish(path.join(process.cwd(), './deploy'), cb);
-}
-exports.deploy = deploy;
+ghpages.publish('dist', {
+  branch: 'master',
+  repo: 'https://example.com/other/repo.git'
+}, callback);
 
 gulp.task('default', dev);
 const start = gulp.series(dev)

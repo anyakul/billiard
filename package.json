@@ -55,7 +55,8 @@
     "stylelint": "stylelint \"src/scss/**/*.scss\" --config",
     "test": "npm run stylelint && eslint src/js/",
     "start": "gulp start",
-    "ftp": "gulp ftp"
+    "ftp": "gulp ftp",
+    "deploy": "gh-pages -d dist"
   },
   "editorconfig-cli": [
     "*.json",
