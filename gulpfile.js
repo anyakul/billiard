@@ -2,6 +2,7 @@ import gulp from "gulp";
 import { plugins } from "./gulp/config/plugins.js";
 
 import { path } from "./gulp/config/path.js";
+const ghPages = require('gh-pages');
 
 global.app = {
   path: path,
@@ -32,6 +33,11 @@ function watcher() {
 const mainTasks = gulp.parallel(copy, scss, jsSwiper, js, images, svg, fonts, zip)
 
 const dev = gulp.series(reset, mainTasks, gulp.parallel(watcher, server))
+
+function deploy(cb) {
+  ghPages.publish(path.join(process.cwd(), './deploy'), cb);
+}
+exports.deploy = deploy;
 
 gulp.task('default', dev);
 const start = gulp.series(dev)
