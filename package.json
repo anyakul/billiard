@@ -43,6 +43,7 @@
   "dependencies": {
     "browsersync-ssi": "^0.2.4",
     "circletype": "^2.3.0",
+    "deploy": "^1.0.3",
     "editorconfig-cli": "^0.3.0",
     "gulp-svgmin": "^4.1.0",
     "print-js": "^1.6.0",
