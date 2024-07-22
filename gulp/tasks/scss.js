@@ -31,6 +31,6 @@ export const scss = () => {
         extname:".min.css"
        }))
        .pipe(app.gulp.dest(app.path.build.css))
-       .pipe(app.gulp.dest("_site/css"))//Пайп для Джекил сахар не используем
+       .pipe(app.gulp.dest("_site/css"))
        .pipe(app.plugins.browsersync.stream())
 }

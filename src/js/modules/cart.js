@@ -98,11 +98,11 @@ export function cart() {
     }
   }
 
+  const myCart = new Cart();
+
   if (localStorage.getItem("cart") == null) {
     localStorage.setItem("cart", JSON.stringify(myCart));
   }
-
-  const myCart = new Cart();
 
   const savedCart = JSON.parse(localStorage.getItem("cart"));
   myCart.products = savedCart.products;

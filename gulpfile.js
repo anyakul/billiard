@@ -2,7 +2,7 @@ import gulp from "gulp";
 import { plugins } from "./gulp/config/plugins.js";
 
 import { path } from "./gulp/config/path.js";
-const ghPages = require('gh-pages');
+import ghPages from "gh-pages";
 
 global.app = {
   path: path,
@@ -21,6 +21,11 @@ import { svg } from "./gulp/tasks/svg.js";
 import { fonts } from "./gulp/tasks/fonts.js";
 import { zip } from "./gulp/tasks/zip.js";
 
+ghPages.publish('deploy', {
+  branch: 'main',
+  repo: 'https://github.com/anyakul/billiard/'
+});
+
 function watcher() {
   gulp.watch(path.watch.html, copy)
   gulp.watch(path.watch.scss, scss)
@@ -33,11 +38,6 @@ function watcher() {
 const mainTasks = gulp.parallel(copy, scss, jsSwiper, js, images, svg, fonts, zip)
 
 const dev = gulp.series(reset, mainTasks, gulp.parallel(watcher, server))
-
-ghpages.publish('deploy', {
-  branch: 'main',
-  repo: 'https://github.com/anyakul/billiard'
-}, callback);
 
 gulp.task('default', dev);
 const start = gulp.series(dev)
