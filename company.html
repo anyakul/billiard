@@ -1,0 +1,822 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preload" href="fonts/PlayfairDisplay-Regular.woff2" as="font" crossorigin>
+  <link rel="preload" href="fonts/GothamPro-Medium.woff2" as="font" crossorigin>
+  <link rel="preload" href="fonts/GothamPro.woff2" as="font" crossorigin>
+  <link rel="stylesheet" href="css/style.min.css">
+  <title>Бильярд вип</title>
+</head>
+
+<body>
+  <div class="wrapper">
+    <header class="header">
+      <div class="header-logo-contacts-account">
+        <div class="header-container container">
+          <button class="header-menu-button">
+            <svg width="10" height="10">
+              <use xlink:href="img/sprite.svg#icon-burger"></use>
+            </svg>
+          </button>
+          <div class="header-logo-contacts">
+            <a class="header-logo" href="index.html">
+              <picture><source srcset="img/logo.webp" type="image/webp"><img src="img/logo.png" width="187" height="43" alt="Логотип Бильярд вип"></picture>
+              <span class="header-logo-text">Дизайн-студия интерьеров
+                бильярдных и игровых комнат</span>
+            </a>
+            <a class="header-contacts-link" href="tel:88005002940">
+              8 (800) 500 29 40
+            </a>
+            <button class="header-button btn brown-color-btn" data-open-modal="call">Заказать звонок</button>
+          </div>
+          <div class="header-account">
+            <div class="header-account-pc">
+              <a class="header-account-link" href="#">Войти</a>
+              /
+              <a class="header-account-link" href="#">Регистрация</a>
+            </div>
+            <a class="header-icon-link" href="#">
+              <svg width="24" height="23">
+                <use xlink:href="img/sprite.svg#icon-edit"></use>
+              </svg>
+            </a>
+            <a class="header-icon-link" data-open-modal="cart" href="#">
+              <svg width="24" height="23">
+                <use xlink:href="img/sprite.svg#icon-cart"></use>
+              </svg>
+              <span class="header-cart-number">1</span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="header-menu-search section-black">
+        <div class="header-container container">
+          <ul class="header-menu-list">
+            <li class="header-menu-item header-menu-item-active">
+              <a class="header-menu-item-link" href="catalog.html">Каталог товаров</a>
+            </li>
+            <li class="header-menu-item">
+              <a class="header-menu-item-link" href="#">Проекты</a>
+            </li>
+            <li class="header-menu-item">
+              <a class="header-menu-item-link" href="#">Как купить</a>
+              <ul class="header-menu-list-1">
+                <li class="header-menu-item-1">
+                  <a class="header-menu-item-link-1" href="#">Условия оплаты</a>
+                </li>
+                <li class="header-menu-item-1">
+                  <a class="header-menu-item-link-1" href="#">Условия доставки</a>
+                </li>
+                <li class="header-menu-item-1">
+                  <a class="header-menu-item-link-1" href="#">Гарантия на товар</a>
+                </li>
+              </ul>
+            </li>
+            <li class="header-menu-item">
+              <a class="header-menu-item-link" href="blog.html">Новости</a>
+            </li>
+            <li class="header-menu-item">
+              <a class="header-menu-item-link" href="company.html">О компании</a>
+            </li>
+            <li class="header-menu-item">
+              <a class="header-menu-item-link" href="#">Сотрудничество</a>
+            </li>
+            <li class="header-menu-item">
+              <a class="header-menu-item-link" href="#">Контакты</a>
+            </li>
+          </ul>
+          <div class="header-contacts-tablet">
+            <a class="header-contacts-link" href="tel:88005002940">
+              8 (800) 500 29 40
+            </a>
+            <button class="header-button brown-color-button" data-open-modal="call">Заказать звонок</button>
+            <div class="header-account-pc">
+              <a class="header-account-link" href="#">Войти</a>
+              /
+              <a class="header-account-link" href="#">Регистрация</a>
+            </div>
+          </div>
+          <form role="search" class="header-search-form" action="#" method="get">
+            <button type="submit" class="header-search-button" value="Найти">
+              <svg width="18" height="18" xmlns="http://www.w3.org/2000/svg">
+                <use xlink:href="img/sprite.svg#icon-search"></use>
+              </svg>
+            </button>
+            <label for="search-index"></label>
+            <input class="header-search-input" type="text" name="searchIndex" id="search-index" placeholder="Поиск">
+          </form>
+        </div>
+      </div>
+    </header>
+    <main>
+      <h1 class="visually-hidden">Main page</h1>
+      <section class="intro swiper section-black">
+        <div class="intro-slider swiper-wrapper">
+          <div class="intro-slide intro-slide-half-image swiper-slide" style="background-image: url('img/photo-11.jpg');">
+            <div class="intro-container container">
+              <div class="intro-texts">
+                <h2 class="intro-header headers">О компании
+                  Бильярд-VIP</h2>
+                <p class="intro-text">Бильярд-VIP — это комплексные решения от экспертов 
+                  по дизайну и оснащению частных и коммерческих помещений игровыми столами и аксессуарами лучших производителей Европы.</p>
+                <p class="intro-text">Бильярд-VIP — это команда опытных и увлечённых работой менеджеров и дизайнеров из России и Италии. Бильярд-VIP объединяет салон итальянской мебели и бильярдных столов, студию интерьерного дизайна, а также арт-студию, в которой Вы можете заказать картины самых известных современных художников.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="advantages section">
+        <div class="advantages-container container">
+          <h2 class="advantages-header headers-center">Почему именно мы</h2>
+          <ul class="advantages-list">
+            <li class="advantages-item">
+              <h3 class="advantages-item-header">Удобство для наших клиентов</h3>
+              <p class="advantages-item-text">Возможность в одном месте подобрать и заказать игровое оборудование, мебель, свет, аксессуары и декор, или подписать договор управления интерьерным проектом, в рамках которого мы отвечаем за разработку дизайна интерьера и поставку мебели и предметов интерьера.</p>
+            </li>
+            <li class="advantages-item">
+              <h3 class="advantages-item-header">Экономия средств и времени</h3>
+              <p class="advantages-item-text">Обратившись в Бильярд-VIP, Вы сможете значительно сэкономить средства и время, 
+                а также получить комплексное проработанное интерьерное решение. Более 20 лет мы создаём интерьеры и поставляем элитные бильярдные столы и мебель напрямую от производителей. Являемся официальным представителем ряда фабрик.</p>
+            </li>
+            <li class="advantages-item">
+              <h3 class="advantages-item-header">Профессионализм</h3>
+              <p class="advantages-item-text">У нас работают только профессионалы
+                — дизайнеры-проектировщики, менеджеры-бильярдисты, дающие профессиональные и грамотные советы 
+                по выбору бильярдных столов и аксессуаров, 
+                и аттестованные высококвалифицированные специалисты по монтажу, реставрации
+                и ремонту бильярдных столов</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="offer section-black">
+        <div class="offer-container container">
+          <div class="offer-texts section">
+            <h2 class="offer-header headers">Что мы предлагаем</h2>
+            <ul class="offer-list">
+              <li class="offer-item">
+                <span class="offer-item-icon">
+                  <svg width="28" height="18">
+                    <use xlink:href="img/sprite.svg#icon-tick"></use>
+                  </svg>
+                </span>
+                <div class="offer-item-texts">
+                  <h3 class="offer-item-header">Лучшие европейские бренды</h3>
+                  <p class="offer-item-text">Бильярдные и игровые столы, мебель и освещение из Италии, Франции, Беларуси, Литвы, США — более 200 брендов в каталоге сайта. У нас представлены как самые популярные коллекции фабрик, так и новинки мировых выставок.</p>
+                </div>
+              </li>
+              <li class="offer-item">
+                <span class="offer-item-icon">
+                  <svg width="28" height="18">
+                    <use xlink:href="img/sprite.svg#icon-tick"></use>
+                  </svg>
+                </span>
+                <div class="offer-item-texts">
+                  <h3 class="offer-item-header">Доступный и высокий сегменты</h3>
+                  <p class="offer-item-text">Разнообразие производителей, стилей и моделей позволяет предлагать качественные решения в доступном, среднем и высоком ценовых диапазонах.</p>
+                </div>
+              </li>
+              <li class="offer-item">
+                <span class="offer-item-icon">
+                  <svg width="28" height="18">
+                    <use xlink:href="img/sprite.svg#icon-tick"></use>
+                  </svg>
+                </span>
+                <div class="offer-item-texts">
+                  <h3 class="offer-item-header">Экспозиция</h3>
+                  <p class="offer-item-text">В студии интерьера Бильярд-VIP представлены образцы эксклюзивных бильярдных столов от лучших мировых производителей.</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="offer-images">
+            <div class="offer-image">
+              <picture><source srcset="img/photo-12.webp" type="image/webp"><img src="img/photo-12.jpg" width="630" height="630" alt="Что мы предлагаем"></picture>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="feature section">
+        <div class="feature-container container">
+          <h2 class="feature-header headers-center">Особенности наших товаров</h2>
+          <div class="feature-content section-brown">
+            <div class="feature-images">
+              <picture><source srcset="img/photo-13.webp" type="image/webp"><img class="feature-image" src="img/photo-13.jpg" width="675" height="598" alt="Особенности наших товаров"></picture>
+            </div>
+            <div class="feature-texts">
+              <h3 class="feature-header headers">Ручная работа
+                и современные технологии</h3>
+              <p class="feature-text">Каждое изделие изготавливается вручную опытными мастерами с применением старинных технологий. 
+                Опыт древних мастеров выражается в каждой детали,
+                а современные технологии привносят в каждую вещь долговечность, устойчивость к механическим повреждениям и коррозии.</p>
+            </div>
+          </div>
+          <div class="feature-content section-black">
+            <div class="feature-texts">
+              <h3 class="feature-header headers">Интересные формы</h3>
+              <p class="feature-text">В работе над бильярдными столами используются натуральные металлы, такие как дуб, ясень, бук. 
+                Это позволяет придать им причудливые формы, которых
+                вы не встретите в других мастерских.</p>
+              <p class="feature-text">Часто в производстве бильярдных столов используются
+                  и современные материалы, которые позволяют сделать стол настоящим произведением искусства. А предметы интерьера разрабатываются лучшими дизайнерами, 
+                  что гарантирует уникальность и неповторимость каждого
+                  из них.</p>
+            </div>
+            <div class="feature-images">
+              <picture><source srcset="img/photo-14.webp" type="image/webp"><img class="feature-image" src="img/photo-14.jpg" width="675" height="598" alt="Особенности наших товаров"></picture>
+            </div>
+          </div>
+          <div class="feature-content">
+            <div class="feature-images">
+              <picture><source srcset="img/photo-15.webp" type="image/webp"><img class="feature-image" src="img/photo-15.jpg" width="675" height="598" alt="Особенности наших товаров"></picture>
+            </div>
+            <div class="feature-texts">
+              <h3 class="feature-header headers">Индивидуальный подход к каждому заказу</h3>
+              <p class="feature-text">Мы принимаем заказы на изготовление бильярдных столов
+                и мебели, которые создаются по эскизам и чертежам заказчика. Это позволяет подчеркнуть индивидуальность клиента и помещения, в котором будет находиться стол.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="choose section-black">
+        <div class="choose-container container swiper">
+          <div class="choose-texts">
+            <div class="choose-icon-header">
+              <img class="choose-icon" src="img/icon-choose.svg" width="64" height="55" alt="Большой
+              выбор">
+            </div>
+            <h2 class="choose-header headers-center">Большой
+              выбор</h2>
+            <p class="choose-text">В каталоге на сегодняшний день представлено около 5000 бильярдных столов, светильников и предметов мебели для частных и коммерческих проектов.</p>
+            <a class="choose-button btn white-color-btn" href="#" data-open-modal="call">Узнать подробнее</a>
+          </div>
+          <ul class="choose-list swiper-wrapper">
+            <li class="choose-item section-white swiper-slide">
+              <picture><source srcset="img/categories-7.webp" type="image/webp"><img class="choose-item-image" src="img/categories-7.jpg" width="319" height="290" alt="Большой выбор"></picture>
+            </li>
+            <li class="choose-item section-black swiper-slide">
+              <picture><source srcset="img/categories-8.webp" type="image/webp"><img class="choose-item-image" src="img/categories-8.png" width="276" height="134" alt="Большой выбор"></picture>
+            </li>
+            <li class="choose-item section-brown swiper-slide">
+              <picture><source srcset="img/categories-9.webp" type="image/webp"><img class="choose-item-image" src="img/categories-9.png" width="204" height="215" alt="Большой выбор"></picture>
+            </li>
+            <li class="choose-item section-black swiper-slide">
+              <picture><source srcset="img/categories-10.webp" type="image/webp"><img class="choose-item-image" src="img/categories-10.png" width="208" height="120" alt="Большой выбор"></picture>
+            </li>
+            <li class="choose-item section-brown swiper-slide">
+              <picture><source srcset="img/categories-11.webp" type="image/webp"><img class="choose-item-image" src="img/categories-11.png" width="171" height="193" alt="Большой выбор"></picture>
+            </li>
+            <li class="choose-item section-white swiper-slide">
+              <picture><source srcset="img/categories-12.webp" type="image/webp"><img class="choose-item-image" src="img/categories-12.png" width="319" height="290" alt="Большой выбор"></picture>
+            </li>
+          </ul>
+          <div class="choose-pagination swiper-pagination swiper-pagination-brown"></div>
+        </div>
+      </section>
+      <section class="directions section">
+        <div class="directions-container container">
+          <h2 class="directions-header headers-center">Направления работы</h2>
+          <div class="directions-content">
+            <div class="directions-content-item">
+              <span class="directions-icon">
+                <svg width="42" height="57">
+                  <use xlink:href="img/sprite.svg#icon-people"></use>
+                </svg>
+              </span>
+              <h3 class="directions-item-header headers">Частным лицам
+                и дизайнерам</h3>
+              <ul class="directions-list">
+                <li class="directions-item">
+                  <p class="directions-item-text">Комплексные проекты</p>
+                </li>
+                <li class="directions-item">
+                  <p class="directions-item-text">Проектирование и оснащение бильярдных и игровых комнат</p>
+                </li>
+              </ul>
+            </div>
+            <div class="directions-content-item">
+              <span class="directions-icon">
+                <svg width="52" height="46">
+                  <use xlink:href="img/sprite.svg#icon-business"></use>
+                </svg>
+              </span>
+              <h3 class="directions-item-header headers">Для бизнеса</h3>
+              <ul class="directions-list">
+                <li class="directions-item">
+                  <p class="directions-item-text">Компаниям — проектирование и оснащение офисов</p>
+                </li>
+                <li class="directions-item">
+                  <p class="directions-item-text">Девелоперам и собственникам гостиниц и баров</p>
+                </li>
+                <li class="directions-item">
+                  <p class="directions-item-text">Функции менеджера проектов оснащения (от концепции до сдачи)</p>
+                </li>
+                <li class="directions-item">
+                  <p class="directions-item-text">Дизайн игровых зон и игровых залов</p>
+                </li>
+                <li class="directions-item">
+                  <p class="directions-item-text">Комплектация игровых зон игровым оборудованием, мебелью и светом</p>
+                </li>
+              </ul>
+            </div>
+            <div class="directions-content-item">
+              <span class="directions-icon">
+                <svg width="50" height="50">
+                  <use xlink:href="img/sprite.svg#icon-elite"></use>
+                </svg>
+              </span>
+              <h3 class="directions-item-header headers">Девелоперам
+                и агентствам элитной недвижимости</h3>
+              <ul class="directions-list">
+                <li class="directions-item">
+                  <p class="directions-item-text">Совместные акции и программы
+                    увеличения продаж</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="clients clients-white">
+        <div class="clients-container container swiper">
+          <h2 class="clients-header headers-center">Нам доверяют</h2>
+          <p class="clients-text">Среди наших клиентов — IT-компании, банки, торговые сети, промышленные концерны, <br>
+            строительные компании, крупнейшие нефтяные и газодобывающие компании</p>
+          <ul class="clients-list clients-list-noswiper">
+            <li class="clients-item">
+              <picture><source srcset="img/client-mts.webp" type="image/webp"><img class="clients-item-image" src="img/client-mts.png" width="138" height="34" alt="Клиент МТС"></picture>
+            </li>
+            <li class="clients-item">
+              <picture><source srcset="img/client-nornikel.webp" type="image/webp"><img class="clients-item-image" src="img/client-nornikel.png" width="119" height="68" alt="Клиент Норникель"></picture>
+            </li>
+            <li class="clients-item">
+              <picture><source srcset="img/client-rusgidro.webp" type="image/webp"><img class="clients-item-image" src="img/client-rusgidro.png" width="145" height="47" alt="Клиент Русгидро"></picture>
+            </li>
+            <li class="clients-item">
+              <picture><source srcset="img/client-rzd.webp" type="image/webp"><img class="clients-item-image" src="img/client-rzd.png" width="122" height="53" alt="Клиент РЖД"></picture>
+            </li>
+            <li class="clients-item">
+              <picture><source srcset="img/client-rostelecom.webp" type="image/webp"><img class="clients-item-image" src="img/client-rostelecom.png" width="150" height="54" alt="Клиент Ростелеком"></picture>
+            </li>
+            <li class="clients-item">
+              <picture><source srcset="img/client-gazprombank.webp" type="image/webp"><img class="clients-item-image" src="img/client-gazprombank.png" width="180" height="38" alt="Клиент Газпромбанк"></picture>
+            </li>
+            <li class="clients-item">
+              <picture><source srcset="img/client-raiffaisen.webp" type="image/webp"><img class="clients-item-image" src="img/client-raiffaisen.png" width="152" height="31" alt="Клиент Райффайзен"></picture>
+            </li>
+            <li class="clients-item">
+              <picture><source srcset="img/client-sber.webp" type="image/webp"><img class="clients-item-image" src="img/client-sber.png" width="158" height="30" alt="Клиент Сбер"></picture>
+            </li>
+            <li class="clients-item">
+              <picture><source srcset="img/client-lukoil.webp" type="image/webp"><img class="clients-item-image" src="img/client-lukoil.png" width="150" height="28" alt="Клиент Лукойл"></picture>
+            </li>
+            <li class="clients-item">
+              <picture><source srcset="img/client-pochta.webp" type="image/webp"><img class="clients-item-image" src="img/client-pochta.png" width="130" height="63" alt="Клиент Почта"></picture>
+            </li>
+            <li class="clients-item">
+              <picture><source srcset="img/client-rosneft.webp" type="image/webp"><img class="clients-item-image" src="img/client-rosneft.png" width="127" height="76" alt="Клиент Роснефть"></picture>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="video section">
+        <div class="video-container container">
+          <h2 class="video-header headers-center">Отзывы партнеров</h2>
+          <ul class="video-list">
+            <li class="video-item video-block" data-video="block">
+              <div class="video-wrapper" data-video="wrapper">
+                <div class="video-button-text" data-video="button">
+                  <button type="button" class="video-button" aria-label="Проиграть видео/остановить видео">
+                    <picture><source srcset="img/icon-video.webp" type="image/webp"><img class="video-button-image" src="img/icon-video.png" width="90" height="90" alt="Кнопка видео"></picture>
+                  </button>
+                  <div class="video-texts">
+                    <p class="video-text">Максим Соловьев</p>
+                    <p class="video-text">ООО «Технониколь»</p>
+                  </div>
+                </div>
+                <video preload="auto" poster="img/video-1.jpg" data-video="video" width="401" height="463">
+                  <source data-video='mp4' src="img/video.mp4" type='video/mp4'>
+                  <source data-video='webm' src="img/video.webm" type='video/webm'>
+                  <source data-video='ogv' src="img/video.ogv" type='video/ogg'>
+                </video>
+              </div>
+            </li>
+            <li class="video-item video-block" data-video="block">
+              <div class="video-wrapper" data-video="wrapper">
+                <div class="video-button-text" data-video="button">
+                  <button type="button" class="video-button" aria-label="Проиграть видео/остановить видео">
+                    <picture><source srcset="img/icon-video.webp" type="image/webp"><img class="video-button-image" src="img/icon-video.png" width="90" height="90" alt="Кнопка видео"></picture>
+                  </button>
+                  <div class="video-texts">
+                    <p class="video-text">Максим Соловьев</p>
+                    <p class="video-text">ООО «Технониколь»</p>
+                  </div>
+                </div>
+                <video preload="auto" poster="img/video-2.jpg" data-video="video" width="401" height="463">
+                  <source data-video='mp4' src="img/video.mp4" type='video/mp4'>
+                  <source data-video='webm' src="img/video.webm" type='video/webm'>
+                  <source data-video='ogv' src="img/video.ogv" type='video/ogg'>
+                </video>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="delivery section section-black">
+        <div class="delivery-container container">
+          <div class="delivery-texts">
+            <h2 class="delivery-header headers">География поставок</h2>
+            <p class="delivery-text">Более 100 городов<br> 
+              по всей России и СНГ</p>
+          </div>
+          <div class="delivery-images contacts-map" id="map-black">
+            <div class="delivery-tabs visually-hidden">
+              <button class="delivery-tabs-button" data-coord="[55.755864, 37.617698]" title="Москва"></button>
+              <button class="delivery-tabs-button" data-coord="[54.782495, 32.048054]" title="Смоленск"></button>
+              <button class="delivery-tabs-button" data-coord="[51.660781, 39.200296]" title="Воронеж"></button>
+              <button class="delivery-tabs-button" data-coord="[55.796127, 49.106414]" title="Казань"></button>
+              <button class="delivery-tabs-button" data-coord="[59.938784, 30.314997]" title="Санкт-петербург"></button>
+              <button class="delivery-tabs-button" data-coord="[43.115542, 131.885494]" title="Владивосток"></button>
+              <button class="delivery-tabs-button" data-coord="[62.027221, 129.732178]" title="Якутск"></button>
+              <button class="delivery-tabs-button" data-coord="[52.289588, 104.280606]" title="Иркутск"></button>
+            </div>
+            <picture><source srcset="img/map-delivery.webp" type="image/webp"><img src="img/map-delivery.png" width="1353" height="735" alt="География поставок"></picture>
+          </div>
+        </div>
+      </section>
+      <div class="btn-up btn-up-hide btn-up_hide"></div>
+    </main>
+    <footer class="footer section-black">
+      <div class="footer-section">
+        <div class="footer-container container">
+          <div class="footer-part" data-hide="item">
+            <button class="footer-part-button" data-hide="button">Компания</button>
+            <ul class="footer-list" data-hide="mobile-hidden">
+              <li class="footer-item">
+                <a href="company.html">О компании</a>
+              </li>
+              <li class="footer-item">
+                <a href="#">Проекты</a>
+              </li>
+              <li class="footer-item">
+                <a href="#">Партнеры</a>
+              </li>
+              <li class="footer-item">
+                <a href="blog.html">Новости</a>
+              </li>
+              <li class="footer-item">
+                <a href="#">Команда</a>
+              </li>
+              <li class="footer-item">
+                <a href="#">Контакты</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-part" data-hide="item">
+            <button class="footer-part-button" data-hide="button">Информация</button>
+            <ul class="footer-list" data-hide="mobile-hidden">
+              <li class="footer-item">
+                <a href="#">Способы оплаты</a>
+              </li>
+              <li class="footer-item">
+                <a href="#">Условия доставки</a>
+              </li>
+              <li class="footer-item">
+                <a href="#">Гарантия на товар</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-part" data-hide="item">
+            <button class="footer-part-button" data-hide="button">Сотрудничество</button>
+            <ul class="footer-list" data-hide="mobile-hidden">
+              <li class="footer-item">
+                <a href="#">Дизайнерам</a>
+              </li>
+              <li class="footer-item">
+                <a href="#">Поставщикам</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-part footer-part-payment" data-hide="item">
+            <button class="footer-part-button" data-hide="button">Способы оплаты</button>
+            <div class="footer-hidden" data-hide="mobile-hidden">
+              <p class="footer-part-text">Вы можете оплатить покупки онлайн, наличными в наших салонах, а также по выставленному счёту</p>
+              <ul class="footer-logo-list">
+                <li class="footer-logo-item">
+                  <a href="#"></a>
+                  <picture><source srcset="img/logo-visa.webp" type="image/webp"><img class="footer-logo" src="img/logo-visa.png" width="35" height="11" alt="Виза"></picture>
+                </li>
+                <li class="footer-logo-item">
+                  <a href="#"></a>
+                  <picture><source srcset="img/logo-mastercard.webp" type="image/webp"><img class="footer-logo" src="img/logo-mastercard.png" width="33" height="20" alt="Мастеркард"></picture>
+                </li>
+                <li class="footer-logo-item">
+                  <a href="#"></a>
+                  <picture><source srcset="img/logo-mir.webp" type="image/webp"><img class="footer-logo" src="img/logo-mir.png" width="38" height="10" alt="Мир"></picture>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer-part footer-part-contacts" data-hide="item">
+            <button class="footer-part-button" data-hide="button">Контакты</button>
+            <div class="footer-hidden" data-hide="mobile-hidden">
+              <a class="footer-contacts-link" href="tel:88005002940" data-hide="hidden">8 (800) 500-29-40</a>
+              <button class="footer-button brown-color-button" data-open-modal="call">Заказать звонок</button>
+              <ul class="footer-social social">
+                <li class="social-item">
+                  <a class="social-link" href="#">
+                    <span class="social-item-icon">
+                      <svg width="20" height="20">
+                        <use xlink:href="img/sprite.svg#icon-facebook"></use>
+                      </svg>
+                    </span>
+                  </a>
+                </li>
+                <li class="social-item">
+                  <a class="social-link" href="#">
+                    <span class="social-item-icon">
+                      <svg width="18" height="18">
+                        <use xlink:href="img/sprite.svg#icon-whatsapp"></use>
+                      </svg>
+                    </span>
+                  </a>
+                </li>
+                <li class="social-item">
+                  <a class="social-link" href="#">
+                    <span class="social-item-icon">
+                      <svg width="18" height="18">
+                        <use xlink:href="img/sprite.svg#icon-telegram"></use>
+                      </svg>
+                    </span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-section">
+        <div class="footer-copyright container">
+          <a class="footer-main-logo" href="index.html">
+            <picture><source srcset="img/logo.webp" type="image/webp"><img src="img/logo.png" width="187" height="43" alt="Логотип Бильярд вип"></picture>
+          </a>
+          <p class="footer-copyright-text">2020 © Группа компаний Бильярд №1</p>
+          <a class="footer-copyright-link" href="#">Политика конфиденциальности</a>
+          <a class="footer-copyright-link" href="#">Публичная  оферта</a>
+        </div>
+      </div>
+    </footer>
+    <section class="modal modal--preload" data-modal="call">
+      <div class="modal-wrapper">
+        <div class="modal-overlay" data-close-modal="data-close-modal">
+        </div>
+        <div class="modal-content modal-content-contacts">
+          <div class="contacts-texts">
+            <div class="contacts-header-text">
+              <h2 class="contacts-header small-header">Заказать звонок</h2>
+            </div>
+            <form class="contacts-form contact-form form" action="#" method="post">
+              <ul class="contact-form-list">
+                <li class="contact-form-item">
+                  <label for="modal-name">Ваше имя*</label>
+                  <input type="text" id="modal-name" name="name" required>
+                </li>
+                <li class="contact-form-item">
+                  <label for="modal-phone">Ваш телефон*</label>
+                  <input type="tel" placeholder="+7 (___)___-__-__" maxlength="18" id="modal-phone" name="phone" pattern="^((\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{10,15}$" required>
+                </li>
+                <li class="contact-form-item">
+                  <label for="modal-email">Электронная почта</label>
+                  <input type="email" placeholder="Email" id="modal-email" name="email"
+                    pattern="[a-z0-9]+@[a-z0-9]+\.[a-z]{2,3}" required>
+                </li>
+                <li class="contact-form-item">
+                  <label for="modal-message">Ваше сообщение</label>
+                  <textarea id="modal-message" name="message" placeholder="Ваше сообщение"></textarea>
+                </li>
+                <li class="contact-form-item">
+                  <input type="radio" class="visually-hidden" id="modal-agree" name="modal-agree" value="yes">
+                  <label for="modal-agree">Я согласен на <a href="#">обработку персональных данных</a></label>
+                </li>
+              </ul>
+              <button class="contact-form-button btn black-button" type="submit">Отправить</button>
+            </form>
+          </div>
+          <button class="modal-close-btn" type="button" aria-label="Закрыть попап" data-close-modal="data-close-modal" data-focus="data-focus">
+            <svg width="15" height="15">
+              <use xlink:href="img/sprite.svg#icon-cross"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </section>
+    <section class="modal modal--preload" data-modal="cart">
+      <div class="modal-wrapper">
+        <h2 class="modal-header headers-center">Состав по предметам</h2>
+        <div class="modal-overlay" data-close-modal="data-close-modal">
+        </div>
+        <section class="modal modal--preload" data-modal="cart">
+          <div class="modal-wrapper">
+            <div class="modal-overlay" data-close-modal="data-close-modal">
+            </div>
+            <div class="modal-content modal-content-cart">
+              <div class="cart">
+                <div class="cart-container">
+                  <h2 class="cart-header">Состав по предметам</h2>
+                  <div class="cart-table">
+                    <div class="cart-table-names">
+                      <div class="cart-table-part cart-table-part-image">
+                        <p class="cart-table-part-name">Фото</p>
+                      </div>
+                      <div class="cart-table-part cart-table-part-names">
+                        <p class="cart-table-part-name">Наименование</p>
+                      </div>
+                      <div class="cart-table-part cart-table-part-article">
+                        <p class="cart-table-part-name">Артикул</p>
+                      </div>
+                      <div class="cart-table-part cart-table-part-size">
+                        <p class="cart-table-part-name">Размер</p>
+                      </div>
+                      <div class="cart-table-part cart-table-part-price">
+                        <p class="cart-table-part-name">Цена</p>
+                      </div>
+                      <div class="cart-table-part cart-table-part-number">
+                        <p class="cart-table-part-name">Количество</p>
+                      </div>
+                      <div class="cart-table-part cart-table-part-sum">
+                        <p class="cart-table-part-name">Сумма</p>
+                      </div>
+                      <div class="cart-table-part cart-table-part-check">
+                        <p class="cart-table-part-name">Выбрано</p>
+                      </div>
+                      <div class="cart-table-part cart-table-part-remove">
+                        <p class="cart-table-part-name"></p>
+                      </div>
+                    </div>
+                    <p class="cart-no-items">В корзине ничего нет. Добавьте товары в корзину</p>
+                    <div class="cart-lists">
+                      <!--<div class="cart-list">
+                        <div class="cart-table-part cart-table-part-image">
+                          <div class="cart-image">
+                            <picture><source srcset="img/catalog-1.webp" type="image/webp"><img src="img/catalog-1.jpg" width="130" height="130" alt="Кресло JAGGER"></picture>
+                          </div>
+                        </div>
+                        <div class="cart-table-part cart-table-part-names">
+                          <p class="cart-table-item-name">Наименование</p>
+                          <p class="cart-table-item-text">Кресло JAGGER</p>
+                        </div>
+                        <div class="cart-table-part cart-table-part-article">
+                          <p class="cart-table-item-name">Артикул</p>
+                          <p class="cart-table-item-text">IC-83168</p>
+                        </div>
+                        <div class="cart-table-part cart-table-part-size">
+                          <p class="cart-table-item-name">Размер</p>
+                          <p class="cart-table-item-text">83х78х97</p>
+                        </div>
+                        <div class="cart-table-part cart-table-part-price">
+                          <p class="cart-table-item-name">Цена</p>
+                          <p class="cart-table-item-text">1 392 869 Р</p>
+                        </div>
+                        <div class="cart-table-part cart-table-part-number">
+                          <div class="cart-buttons-number">
+                            <button class="cart-button-number cart-button-number-less">
+                              <svg width="14" height="7">
+                                <use xlink:href="img/sprite.svg#icon-arrow"></use>
+                              </svg>
+                            </button>
+                            <p class="cart-number">1</p>
+                            <button class="cart-button-number cart-button-number-more">
+                              <svg width="14" height="7">
+                                <use xlink:href="img/sprite.svg#icon-arrow"></use>
+                              </svg>
+                            </button>
+                          </div>
+                        </div>
+                        <div class="cart-table-part cart-table-part-sum">
+                          <p class="cart-table-item-name">Сумма</p>
+                          <p class="cart-table-item-text">1 392 869 Р</p>
+                        </div>
+                        <div class="cart-table-part cart-table-part-check">
+                          <div class="cart-table-choose cart-table-choose-true">
+                            <svg width="14" height="10">
+                              <use xlink:href="img/sprite.svg#icon-tick"></use>
+                            </svg>
+                          </div>
+                        </div>
+                        <div class="cart-table-part cart-table-part-remove">
+                          <button class="cart-item-delete-button">
+                            ✖
+                          </button>
+                        </div>
+                      </div>
+                      <div class="cart-list">
+                        <div class="cart-table-part cart-table-part-image">
+                          <div class="cart-image">
+                            <picture><source srcset="img/catalog-1.webp" type="image/webp"><img src="img/catalog-1.jpg" width="130" height="130" alt="Кресло JAGGER"></picture>
+                          </div>
+                        </div>
+                        <div class="cart-table-part cart-table-part-names">
+                          <p class="cart-table-item-name">Наименование</p>
+                          <p class="cart-table-item-text">Кресло JAGGER</p>
+                        </div>
+                        <div class="cart-table-part cart-table-part-size">
+                          <p class="cart-table-item-name">Размер</p>
+                          <p class="cart-table-item-text">IC-83168</p>
+                        </div>
+                        <div class="cart-table-part cart-table-part-article">
+                          <p class="cart-table-item-name">Артикул</p>
+                          <p class="cart-table-item-text">83х78х97</p>
+                        </div>
+                        <div class="cart-table-part cart-table-part-price">
+                          <p class="cart-table-item-name">Цена</p>
+                          <p class="cart-table-item-text">1 392 869 Р</p>
+                        </div>
+                        <div class="cart-table-part cart-table-part-number">
+                          <div class="cart-buttons-number">
+                            <button class="cart-button-number cart-button-number-less">
+                              <svg width="14" height="7">
+                                <use xlink:href="img/sprite.svg#icon-arrow"></use>
+                              </svg>
+                            </button>
+                            <p class="cart-number">1</p>
+                            <button class="cart-button-number cart-button-number-more">
+                              <svg width="14" height="7">
+                                <use xlink:href="img/sprite.svg#icon-arrow"></use>
+                              </svg>
+                            </button>
+                          </div>
+                        </div>
+                        <div class="cart-table-part cart-table-part-sum">
+                          <p class="cart-table-item-name">Сумма</p>
+                          <p class="cart-table-item-text">1 392 869 Р</p>
+                        </div>
+                        <div class="cart-table-part cart-table-part-check">
+                          <div class="cart-table-choose cart-table-choose-true">
+                            <svg width="14" height="10">
+                              <use xlink:href="img/sprite.svg#icon-tick"></use>
+                            </svg>
+                          </div>
+                        </div>
+                        <div class="cart-table-part cart-table-part-remove">
+                          <button class="cart-item-delete-button">
+                            ✖
+                          </button>
+                        </div>
+                        <p class="cart-max-number visually-hidden">5</p>
+                      </div>-->
+                    </div>
+                  </div>
+                  <div class="cart-all">
+                    Общая сумма: <span class="cart-total">1 392 869</span> Р
+                  </div>
+                  <form class="cart-form contact-form form" action="#" method="post" target="_blank">
+                    <div class="cart-form-list-button">
+                      <ul class="cart-form-list">
+                        <li class="cart-form-item">
+                          <label for="cart-name" class="visually-hidden">Как к вам обращаться?</label>
+                          <input type="text" id="cart-name" name="name" placeholder="Как к вам обращаться?" required>
+                        </li>
+                        <li class="cart-form-item">
+                          <label for="cart-phone" class="visually-hidden">Ваш телефон</label>
+                          <input type="tel" placeholder="+7 (___)___-__-__" maxlength="18" id="cart-phone" name="phone" pattern="^((\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{10,15}$" required>
+                        </li>
+                        <li class="cart-form-item">
+                          <label class="visually-hidden" for="cart-email">Электронная почта</label>
+                          <input type="email" placeholder="Email" id="cart-email" name="email"
+                            pattern="[a-z0-9]+@[a-z0-9]+\.[a-z]{2,3}" required>
+                        </li>
+                        <li class="cart-form-item-info">
+                          <label for="cart-name" class="visually-hidden">Товары</label>
+                          <input type="hidden" id="cart-info" name="name">
+                        </li>
+                      </ul>
+                      <button class="cart-button btn black-button" type="submit">Оформить заказ</button>
+                    </div>
+                    <div class="contact-form-radio">
+                      <input class="visually-hidden" type="radio" id="cart-agree" name="cart-agree" value="Согласен" required oninvalid="document.querySelector('.cart-agree-error-message').innerHTML = 'Поставьте отметку о согласии с Политикой конфиденциальности'">
+                      <label for="cart-agree">Я согласен с условиями <a href="#">Политики конфиденциальности</a></label>
+                      <span class="cart-agree-error-message"></span>
+                    </div>
+                  </form>
+                </div>
+                <button class="modal-close-btn" type="button" aria-label="Закрыть попап" data-close-modal="data-close-modal" data-focus="data-focus">
+                  <svg width="15" height="15">
+                    <use xlink:href="img/sprite.svg#icon-cross"></use>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </section>
+  </div>
+  <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;"></script>
+  <script src="./js/swiper.min.js"></script>
+  <script src="./js/main.min.js"></script>
+</body>
+
+</html>
