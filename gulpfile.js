@@ -34,9 +34,9 @@ const mainTasks = gulp.parallel(copy, scss, jsSwiper, js, images, svg, fonts, zi
 
 const dev = gulp.series(reset, mainTasks, gulp.parallel(watcher, server))
 
-ghpages.publish('dist', {
-  branch: 'master',
-  repo: 'https://example.com/other/repo.git'
+ghpages.publish('deploy', {
+  branch: 'main',
+  repo: 'https://github.com/anyakul/billiard'
 }, callback);
 
 gulp.task('default', dev);
