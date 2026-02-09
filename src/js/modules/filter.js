@@ -1,4 +1,5 @@
 import * as pagination from './pagination.js';
+import * as cart from './cart.js';
 
 export const filter = () => {
   const parent = document.querySelector('[data-filter="parent"]');
@@ -123,6 +124,7 @@ export const filter = () => {
       sortPopularButton.addEventListener('click', () => {
         sort('less', 'popular');
         pagination.paginationWithSort();
+        cart.cart();
       })
     }
 
@@ -130,6 +132,7 @@ export const filter = () => {
       sortPriceLessButtons.addEventListener('click', () => {
         sort('less', 'price');
         pagination.paginationWithSort();
+        cart.cart();
       })
     }
 
@@ -137,6 +140,7 @@ export const filter = () => {
       sortPriceMoreButtons.addEventListener('click', () => {
         sort('more', 'price');
         pagination.paginationWithSort();
+        cart.cart();
       })
     }
   }
@@ -198,6 +202,7 @@ export const filter = () => {
           button.classList.add('is-active');
           filterPriceFunc();
           pagination.pagination();
+          cart.cart();
         })
       }
     })

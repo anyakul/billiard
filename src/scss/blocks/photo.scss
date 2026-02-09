@@ -2,9 +2,14 @@
   position: relative;
   z-index: 20;
   cursor: pointer;
+  width: 100%;
+  height: 100%;
+
+  .swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
+    width: fit-content;
+  }
 
   @media screen and (max-width: $max-tablet) {
-    overflow-x: hidden;
     padding-bottom: 15px;
   }
 
@@ -48,7 +53,6 @@
   
 
 .photo-item {
-  display: none;
   width: 100%;
 
   img {
@@ -75,11 +79,12 @@
   position: absolute;
   top: 0;
   left: 0;
+  left: 0;
+  right: 0;
   z-index: 30;
-  display: none;
   justify-content: center;
-  width: 100%;
-  height: calc(100% + 19px);
+  width: fit-content;
+  height: 6px;
   margin: 0 auto;
 
   .photo-indicator {
@@ -89,7 +94,6 @@
     height: 100%;
     width: 100%;
     margin: 0;
-    padding: 0 8px;
     border-width: 0;
     background-color: transparent;
 
@@ -136,7 +140,7 @@
       top: auto;
       display: flex;
       justify-content: center;
-      height: 6px;
+      height: 10px;
       padding: 0;
     }
 
@@ -145,9 +149,9 @@
     }
 
     .swiper-pagination-bullet {
-      width: 6px;
-      min-width: 6px;
-      height: 6px;
+      width: 10px;
+      min-width: 10px;
+      height: 10px;
       margin: 0;
       margin-right: 3px;
       background-color: $light-grey;
@@ -164,5 +168,4 @@
 .photo-list {
   width: 100%;
   height: 100%;
-  padding-bottom: 15px;
 }

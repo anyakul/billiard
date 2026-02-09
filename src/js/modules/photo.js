@@ -1,5 +1,5 @@
 export function photo() {
-  const photos = document.querySelectorAll('.photo');
+  const photos = document.querySelectorAll('.photo-slider.slider');
 
   photos.forEach((item) => {
     let items = item.querySelectorAll('.photo-item');

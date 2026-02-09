@@ -28,7 +28,7 @@ export const pagination = () => {
         pageButton.addEventListener('click', () => {
           currentPage = i;
           showPage(itemsPerPage);
-          updateActiveButtonStates();
+          updateActiveButtonStates(currentPage);
         });
   
         paginationContainer.appendChild(pageButton);
@@ -36,7 +36,7 @@ export const pagination = () => {
     }
   }
 
-  const updateActiveButtonStates = () => {
+  const updateActiveButtonStates = (currentPage) => {
     const pageButtons = document.querySelectorAll('.pagination button');
     pageButtons.forEach((button, index) => {
       if (index === currentPage) {

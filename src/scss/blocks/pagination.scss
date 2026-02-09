@@ -1,11 +1,22 @@
+.pagination {
+  display: flex;
+  margin-bottom: 50px;
+  gap: 30px
+}
+
 .pagination-list {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 15px;
+  gap: 10px;
+  margin-top: 30px;
 
-  @media screen and (max-width: $max-mobile) {
-    margin-bottom: 40px;
+  @media(max-width: $max-tablet) {
+    margin-top: 25px
+  }
+
+  @media(max-width: $max-mobile) {
+    margin-top: 0
   }
 
   button {
@@ -13,20 +24,26 @@
     justify-content: center;
     align-items: center;
     width: 32px;
+    min-width: 32px;
     height: 32px;
-    margin-right: 8px;
-    border: 1px solid $light-grey;
+    border: 1px solid #F2F4F6;
+    border-radius: 4px;
     font-size: 14px;
-    line-height: 100%;
-    background-color: $white;
+    line-height: 21px;
     opacity: 1;
     cursor: pointer;
-  
+
+    @media(max-width: $max-mobile) {
+      width: 30px;
+      min-width: 30px;
+      height: 30px;
+      font-size: 12px;
+    }
+
     @media (hover: hover), screen and (min-width: 0\0) {
       &:hover,
       &:active,
       &:focus {
-        border: 1px solid $brown;
         background-color: $brown;
         color: $white;
       }
@@ -36,23 +53,35 @@
   button.active {
     background-color: $brown;
     color: $white;
+    border: 1px solid $brown;
+  }
+}
 
-    @media (hover: hover), screen and (min-width: 0\0) {
-      &:hover,
-      &:active,
-      &:focus {
-        opacity: 0.8;
-      }
+.pagination-item-active {
+  background-color: $brown;
+  color: $white;
+  border: 1px solid $brown;
+
+  a {
+    color: $white;
+  }
+
+  @media (hover: hover), screen and (min-width: 0\0) {
+    &:hover,
+    &:focus {
+      opacity: 0.8;
     }
   }
 }
 
-.pagination-per-page {
-  display: flex;
-  align-items: center;
+.pagination-item.disabled a {
+  opacity: 0.5;
 
-  .custom-select {
-    width: 70px;
-    margin-left: 15px;
+  @media (hover: hover), screen and (min-width: 0\0) {
+    &:hover,
+    &:focus {
+      opacity: 0.5;
+      color: #181818;
+    }
   }
 }

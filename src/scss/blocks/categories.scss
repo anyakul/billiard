@@ -1,7 +1,7 @@
 .categories-container {
   display: flex;
 
-  @media screen and (max-width: $max-mobile) {
+  @media screen and (max-width: 900px) {
     flex-direction: column;
   }
 }
@@ -29,9 +29,16 @@
     background-size: cover;
   }
 
+  @media screen and (max-width: 900px) {
+    width: calc(100% + 48px);
+    min-width: calc(100% + 48px);
+    height: auto;
+    margin-left: -24px;
+  }
+
   @media screen and (max-width: $max-mobile) {
-    width: calc(100% + 30px);
-    min-width: calc(100% + 30px);
+    width: calc(100% + 28px);
+    min-width: calc(100% + 28px);
     height: auto;
     margin-left: -14px;
   }
@@ -167,7 +174,7 @@
     padding-bottom: 70px;
   }
 
-  @media screen and (max-width: $max-mobile) {
+  @media screen and (max-width: 900px) {
     width: 100%;
     margin-left: 0;
   }

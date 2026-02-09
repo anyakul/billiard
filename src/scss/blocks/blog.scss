@@ -1,6 +1,7 @@
 .blog-row {
   display: flex;
   align-items: flex-start;
+  margin-bottom: 50px;
 
   @media screen and (max-width: $max-tablet) {
     flex-direction: column;
@@ -30,6 +31,7 @@
   @media screen and (max-width: $max-mobile) {
     width: calc(100% + 15px);
     margin-left: -15px;
+    margin-bottom: 10px;
   }
 }
 
@@ -118,9 +120,14 @@
   margin-bottom: 10px;
   font-size: 16px;
   font-weight: 500;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
 
   @media screen and (max-width: $max-mobile) {
-    font-size: 11px;
+    font-size: 12px;
   }
 }
 

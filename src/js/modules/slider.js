@@ -123,21 +123,17 @@ export function slider() {
       clickable: true,
     }
   })
-  let photoSwiper = new Swiper('.photo-slider', {
-    slidesPerView: "auto",
+  let photoSwiper = new Swiper('.photo-slider.swiper', {
+    slidesPerView: 1,
     slidesPerGroup: 1,
     effect: "fade",
     spaceBetween: 20,
-    init: false,
+    //init: false,
     fadeEffect: {
       crossFade: true
     },
     initialSlide: 0,
     loop: false,
-    navigation: {
-      nextEl: '.photo-next',
-      prevEl: '.photo-prev',
-    },
     pagination: {
       el: '.photo-pagination',
       clickable: true,

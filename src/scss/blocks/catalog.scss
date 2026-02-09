@@ -6,6 +6,7 @@
   position: relative;
   display: flex;
   width: 100%;
+  margin-bottom: 50px;
 
   @media screen and (max-width: $max-tablet) {
     display: block;
@@ -146,7 +147,6 @@
     .photo-item {
       @media screen and (max-width: $max-tablet) {
         z-index: 80;
-        display: inline-block;
         height: 100%;
         vertical-align: top;
       }
@@ -175,6 +175,10 @@
   margin-bottom: 10px;
   font-size: 18px;
   font-weight: 500;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
 
   @media screen and (max-width: $max-tablet) {
     font-size: 16px;

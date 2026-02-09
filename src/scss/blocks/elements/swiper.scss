@@ -55,9 +55,9 @@
   @media (max-width: $max-mobile) {
     position: absolute;
     left: 16px;
-    width: 18px;
-    min-width: 18px;
-    height: 18px;
+    width: 30px;
+    min-width: 30px;
+    height: 30px;
   }
 
   svg {
@@ -71,7 +71,7 @@
   left: 10px;
 
   @media (max-width: $max-mobile) {
-    left: -10px;
+    left: 10px;
   }
 }
 
@@ -81,7 +81,7 @@
 
   @media (max-width: $max-mobile) {
     left: auto;
-    right: -10px;
+    right: 10px;
   }
 
   svg {
